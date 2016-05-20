@@ -1,0 +1,3 @@
+ErrorDocument 404 http://www.whoisxmlapi.com/404.php
+
+php_flag display_errors off

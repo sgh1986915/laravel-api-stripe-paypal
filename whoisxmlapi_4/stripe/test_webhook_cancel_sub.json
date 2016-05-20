@@ -1,0 +1,48 @@
+{
+  "id": "evt_5TsPMs7KpUstMC",
+  "created": 1420778752,
+  "livemode": true,
+  "type": "customer.subscription.deleted",
+  "data": {
+    "object": {
+      "id": "sub_5SwdrKEPPxnRhI",
+      "plan": {
+        "interval": "month",
+        "name": "Domain Name Data Lite",
+        "created": 1356356280,
+        "amount": 1900,
+        "currency": "usd",
+        "id": "domain_name_data_lite",
+        "object": "plan",
+        "livemode": true,
+        "interval_count": 1,
+        "trial_period_days": null,
+        "metadata": {
+        },
+        "statement_descriptor": null,
+        "statement_description": null
+      },
+      "object": "subscription",
+      "start": 1420563855,
+      "status": "canceled",
+      "customer": "cus_5SwdDvpGwbiQ4I",
+      "cancel_at_period_end": false,
+      "current_period_start": 1420563855,
+      "current_period_end": 1423242255,
+      "ended_at": 1420778752,
+      "trial_start": null,
+      "trial_end": null,
+      "canceled_at": 1420778752,
+      "quantity": 1,
+      "application_fee_percent": null,
+      "discount": null,
+      "tax_percent": null,
+      "metadata": {
+      }
+    }
+  },
+    "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_5TsPi5iNWYRVPY",
+  "api_version": "2012-11-07"
+}

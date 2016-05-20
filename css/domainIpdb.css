@@ -1,0 +1,42 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-section-title-possibleappsIP-domainip {
+	margin-bottom:10px;
+}
+.wa-box-pricing-domainip{
+	margin-bottom:30px;
+}
+.wa-title-domainip {
+	margin-bottom:0px;
+}
+.wa-text-domainip{
+	font-weight:bold;
+}
+.wa-search-eg-box {
+	margin-top: 25px;
+}
+.wa-box-pricing-domainip{
+	height:auto;
+}
+.wa-btn-viewShopping a:hover,.wa-btn-viewShopping a:focus {
+	text-decoration:none !important;
+}
+@media (min-width: 976px) {
+	.wa-box-pricing-domainip {
+		height:259px;
+	}
+	.wa-box-pricing-domainip{
+		margin-bottom:15px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-pricing-domainip {
+			height:262px;
+		}
+	}
+}

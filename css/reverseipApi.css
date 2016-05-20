@@ -1,0 +1,51 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-search-form-reverseIpapi{
+	margin-bottom:25px;
+}
+.wa-checkbox-reverseIpapi {
+	margin-right:5px !important;
+}
+.wa-contentLink-reverseIpapi{
+	padding-top: 10px;
+	word-wrap:break-word;
+}
+.wa-content-text-reverseipapi{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wa-table-whoisapi{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.wa-textspacing{
+	margin-bottom:25px;
+}
+.wa-btn-order{
+	margin-top: -28px;
+}
+.wa-radio-xml-Josn {
+	float:left;
+}
+.wa-title-reverseIpApi {
+	margin-bottom:0px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 830px) {
+	.wa-radio-xml-Josn {
+		float:right;
+	}
+}
+
+
+
+

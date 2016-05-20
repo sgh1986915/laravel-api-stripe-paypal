@@ -1,0 +1,50 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>JSSM Test</title>
+<script type="text/javascript" src="../json2.js"></script>
+<script type="text/javascript" src="../jquery-1.2.6.js"></script>
+<script type="text/javascript" src="../jquery.jssm.js"></script>
+<script type="text/javascript" src="../jquery.jssm.config.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('a').jssm('click');
+		$('form').jssm('submit');
+	});
+</script>
+<!--
+<style type="text/css">
+	body, html { min-width: 100%; min-height: 100%; }
+		* html body, * html { width: 100%; height: 100%; }
+
+	* { margin: 0; padding: 0; } 
+	body { background: #FFF; }
+
+	.wrapper { background: #818181; display: none; }
+	.top { background: transparent url("_images/header.gif") left -15px repeat-x; height: 15px; }
+	.bottom { background: transparent url("_images/footer.gif") left top repeat-x; height: 15px; }
+</style>
+-->
+</head>
+
+<body>
+	<script type="text/javascript">jssm.inline();</script>	
+	<div class="wrapper">
+		<div class="top">&nbsp;</div>
+		<h1>JSSM Test</h1>
+		<ul>
+			<li><a href="testdir1/?asdf=1234">Test Link</a></li>
+			<li><a href="testdir2/">Test Link</a></li>
+			<li><a href="testdir3/">Test Link</a></li>
+		</ul>
+		<form action="index.html" method="get"><div>
+			<input type="hidden" name="hiddenvalue1" id="hiddenvalue1" value="644" />
+			<input type="hidden" name="hiddenvalue2" id="hiddenvalue2" value="This works." />
+			<input type="submit" value="Submit This Form" />
+		</div></form>
+		<div class="bottom">&nbsp;</div>
+	</div>
+</body>
+
+</html>

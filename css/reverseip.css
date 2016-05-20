@@ -1,0 +1,34 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-box-keyfeatures-reverseip{
+	margin-bottom: 30px;
+}
+.wa-title-reverseip {
+	margin-bottom:0px;
+}
+.wa-section-title-key-features-reverse-ip {
+	margin-bottom:20px;
+}
+.wa-box-IP-reverseip{
+	height:auto;
+}
+@media (min-width: 976px) {
+	.wa-box-IP-reverseip {
+		height:222px;
+	}
+	.wa-box-keyfeatures-reverseip{
+		margin-bottom: 15px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-IP-reverseip {
+			height:225px;
+		}
+	}
+}
+

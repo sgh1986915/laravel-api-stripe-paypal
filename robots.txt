@@ -1,0 +1,4 @@
+sitemap: https://www.whoisxmlapi.com/sitemap.xml
+
+User-agent: *
+allow: /

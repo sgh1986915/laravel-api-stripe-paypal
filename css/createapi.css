@@ -1,0 +1,47 @@
+label.wa-field-title-status {
+	padding-top:0px !important;
+	margin-left:10px;
+}
+.wa-field-input-selection-radio-inactive {
+	margin-left: 20px !important;
+}
+.wa-field-title-active {
+	margin-right:5px;
+}
+.form-control.wa-formcontent-registration {
+	font-family: Roboto;
+	font-size: 16px;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-input-selection-radio-inactive,.wa-field-input-selection-radio-active{
+	margin-top: 8px !important;
+}
+.wa-field-title-active,.wa-field-title-inactive{
+	margin-top: 7px;
+}
+label {
+	font-weight: normal;
+}
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-title-careateapi {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wa-box-create-form {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.wa-btn-create-apikey {
+	float:left;
+}
+@media (min-width: 768px) {
+	.wa-btn-create-apikey {
+		float:right;
+	}
+}

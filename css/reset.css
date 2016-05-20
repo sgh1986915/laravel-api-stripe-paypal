@@ -1,0 +1,18 @@
+.wa-btn-reset {
+	margin-top:15px;
+}
+.wa-box-reset {
+	margin-bottom:30px;
+	margin-top: 30px;
+}
+.wa-row-pwd ,.wa-field-title-col-confirm-pwd {
+	margin-top:15px;
+}
+.wa-row-reset {
+	margin-bottom:15px;
+}
+@media (min-width: 768px) {
+	.wa-confirm-pwd,.wa-field-title-col-confirm-pwd  {
+		margin-top:0px;
+	}
+}

@@ -1,0 +1,38 @@
+.tp-field-value,.page-title-viewuser {
+	font-family:Roboto;
+}
+.wa-row-content,.wa-btn-edit-profile {
+	margin-top:15px;
+}
+.tp-field-value {
+	font-size:24px;
+	word-wrap: break-word;
+}
+.page-title-viewuser {
+	font-size:30px;
+}
+.wa-btn-orange,.wa-btn-orange:hover {
+	background-color:#ff6656;
+	color:#ffffff;
+	font-family: Roboto Condensed;
+	margin-bottom: 10px;
+}
+.wa-tab-content-profile {
+	border:1px solid #e5e5e5;
+	padding:0px 15px 15px 15px;
+}
+.wa-box {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.wa-nav-tabs-viewprofile>li.active>a:hover {
+	background-color:#0c9bdb;
+	color:#ffffff !important;
+}
+.wa-field-section {
+	margin-bottom:15px;
+}
+.wa-title-viewprofile {
+	margin-top:40px;
+	margin-bottom:40px;
+}

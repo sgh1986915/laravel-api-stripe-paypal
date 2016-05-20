@@ -1,0 +1,3 @@
+$(function(){
+$('#myLightbox').lightbox(options);
+}};

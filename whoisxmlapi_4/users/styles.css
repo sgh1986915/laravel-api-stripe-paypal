@@ -1,0 +1,87 @@
+	body {font-family: Arial, sans-serif; font-size: 12px; }
+	table,tr,td,th {font-family: Arial, sans-serif; font-size: 12px;}
+	ul { list-style: square outside; margin: 10px 0px 10px 20px; }
+
+	.propName {
+		font-weight: bold;
+	}
+	td.propName {
+		text-align: right;
+	}
+	.propValue {
+	}
+
+	tr.altRowBg {
+		background-color: #EEEEEE;
+	}
+	tr.heading {
+		font-size: 12px; 
+		background-color: #CCCCCC;
+		font-weight: bold;
+	}
+	tr.tblHeading {
+		font-size: 12px; 
+		background-color: #EEEEEE;
+		font-weight: bold;
+	}
+
+        td.menuLabel {
+		font-size: 12px; 
+		background-color: #CCCCCC;
+		font-weight: bold;
+	}
+        td.menuText {
+		font-size: 12px; 
+		background-color: #CCCCCC;
+	}
+
+	.formDesc {
+		font-size: 11px;
+	}
+
+	.message,
+        .errorMsg {
+		color: #FF0000;
+	}
+	
+	/* Global Link Classes */
+	a:active {
+		font-family: Arial, sans-serif; 
+		font-size: 12px; 
+		color: #1D5BB3; 
+		text-decoration: underline;
+	}
+	a:link {
+		font-family: Arial, sans-serif; 
+		font-size: 12px; 
+		color: #1D5BB3; 
+		text-decoration: underline;
+	}
+	a:hover {
+		font-family: Arial, sans-serif; 
+		font-size: 12px; 
+		color: #1D5BB3; 
+		text-decoration: underline;
+	}
+	a:visited {
+		font-family: Arial, sans-serif; 
+		font-size: 12px; 
+		color: #1D5BB3; 
+		text-decoration: underline;
+	}
+	a.buttonLink:hover,
+	a.buttonLink:visited,
+	a.buttonLink:link,
+	a.buttonLink:active,
+        {
+		font-family: Arial, sans-serif; 
+		font-size: 12px; 
+		color: #1D5BB3; 
+		text-decoration: none;
+	}
+
+        hr.catdiv {
+  		height: 1px;
+                background: #FFFFFF;
+		margin: 0px 0px 0px 0px;
+	}

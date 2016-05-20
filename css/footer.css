@@ -1,0 +1,206 @@
+.wa-margin {
+	margin:20px 0px;
+}
+.wa-lbl-text {
+	font-family:Roboto Condensed;
+	font-weight:bold;
+	font-size:30px;
+	color:#ffffff;
+}
+.wa-trustedUser-text, .wa-amount-text,.wa-lbl-services {
+	font-family:Roboto;
+	font-weight:bolder;
+}
+.wa-customers-text {
+	font-family:Roboto;
+	font-size:40px;
+	font-weight:normal;
+}
+.wa-trustedCustomer-footer {
+	line-height:65px;
+	margin-top: 22px;
+}
+.wa-trustedUser-text {
+	font-size:24px;
+	margin-bottom:-20px;
+}
+.wa-amount-text {
+	font-size:80px;
+}
+.carousel-control{
+	display:none;
+}
+.wa-footerEnd a:link,.wa-footerEnd a:visited,.wa-footerEnd a:hover,.wa-footerEnd a:active,.wa-footerEnd a:focus,.wa-li-services-footer a{
+    color: #a3a2a2;
+}
+.wa-services-container-footer {
+	display:inline-block;
+}
+li.wa-lbl-li-services {
+	border-bottom:1px solid #5a5a5a;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+}
+.wa-form-group-footer {
+	padding:0px;
+}
+.wa-footerEnd {
+	background-color:#333333;
+	color:#a3a2a2;
+	padding:30px 0px;
+}
+.wa-footer-3  {
+	padding: 50px 0px 45px 0px;
+}
+.wa-footer-2 {
+	background-image:url("../images/background.png");
+	color:#a3a2a2;
+	padding-top:55px;
+	padding-bottom:35px;
+}
+.wa-field-input-subscribe {
+	background-color:#262626;
+	border-color: #5a5a5a;
+}
+.wa-f-right-slider {
+	margin:0px auto;
+}
+.wa-img-arrow-twitter, .wa-img-servicesarrow {
+	display:inline;
+}
+.wa-img-servicesarrow{
+	margin-right:5px;
+}
+.wa-img-arrow {
+	border: 1px solid #ffffff;
+	padding: 5px;
+}
+.wa-img-leftarrow {
+	margin-right:3px;
+}
+.wa-img-rightarrow {
+	margin-left:3px;
+}
+.wa-img-myServices {
+	float:left;
+}
+.wa-img-slider-footer {
+	top:35px;
+	display:none;
+}
+.wa-img-slider-leftfooter{
+	margin-left:29px;
+}
+.wa-img-atLogo , .wa-img-rsaLogo, .wa-img-Ciscologo {
+	clear:both;
+}
+.wa-img-QcommLogo, .wa-img-FsecureLogo, .wa-img-Ciscologo , .wa-imgDuckLogo, .wa-img-atLogo, .wa-img-ebayLogo, .wa-img-rsaLogo {
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.wa-service-images-whois{
+	margin-right: -15px;
+}
+.wa-services-images {
+	width:100%;
+	margin-top:20px;
+}
+.carousel-slide-footer {
+	width:auto;
+	float:left;
+}
+.wa-img-atLogo {
+	margin-top:0px;
+}
+.wa-serices-margin{
+	margin-top: 20px;
+}
+.form-control.wa-field-input-subscribe {
+	color: #a3a2a2;
+	font-family: Open Sans;
+}
+
+.carousel-control.right img ,.carousel-control.right img:hover{
+	/*opacity:0.2;*/
+}
+@media (min-width: 310px) {
+	.carousel-slide-footer{
+		width:290px;
+		float: none;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 768px) {
+	.wa-img-Ciscologo, .wa-img-rsaLogo {
+		clear:none;
+	}
+}
+@media (min-width: 881px) {
+	.carousel-slide-footer{
+		width: 550px;
+		float: right;
+		/*left:-20px;*/
+	}
+}
+@media (min-width: 976px) {
+	.wa-img-slider-footer {
+		display:table;
+	}
+}
+@media (min-width: 980px) {
+	.carousel-control.left.wa-img-left-slider-footer{
+		background: none;
+		left: -20px;
+		top: 49px;
+		width:auto;
+		z-index: 99;
+		display:block !important;
+	}
+	.carousel-control.right.wa-img-right-slider-footer {
+		background: none;
+		right:-10px;
+		top: 49px;
+		width:auto;
+		z-index: 99;
+		display:block !important;
+
+	}
+	.wa-img-QcommLogo, .wa-img-FsecureLogo, .wa-img-Ciscologo , .wa-imgDuckLogo, .wa-img-atLogo, .wa-img-ebayLogo, .wa-img-rsaLogo {
+		margin-right:12px;
+		margin-bottom:10px;
+	}
+
+}
+
+@media (max-width: 880px) {
+	.wa-trustedCustomer-footer{
+		margin:0 auto;
+		float:none;
+		text-align:center;
+	}
+	.wa-dsaf {
+	    overflow: auto;
+	    text-align: center;
+	    margin: 0 auto;
+	    display: block;
+	    max-width: 260px;
+	}
+}
+@media (max-width: 310px) {
+	.wa-img-atLogo {
+		margin-top:10px;
+	}
+}
+
+
+/*
+.wa-newLogo .row{
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+}*/
+
+/*
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)

@@ -1,0 +1,90 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-box-webserviceCall-orderBulkReverse {
+	margin-bottom:30px;
+}
+.wa-search-form-orderBulkReverse {
+	margin-bottom:25px;
+}
+.wa-checkbox-orderBulkReverse {
+	margin-right:5px !important;
+}
+.wa-contentLink-orderBulkReverse {
+	font-family:open Sans;
+	color:#333333;
+}
+.wa-pre-content-orderBulkReverse {
+	background-color:#ffffff;
+	border: 0px;
+	border-radius: 0px;
+	font-family: Open Sans;
+	font-weight: normal;
+}
+.wa-historicRecord-reverseWhois{
+	margin-top:25px;
+}
+.wa-content-text-orderBulkReverse {
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-subtitle-paypal-orderBulkReverse{
+	font-family:Open Sans;
+	font-weight:bold;
+}
+.wa-box-payPlan-orderBulkReverse{
+	height:auto;
+}
+.wa-box-Secure-orderBulkReverse {
+	overflow:hidden;
+}
+.wa-btn-bill,.wa-btn-bill:hover {
+	border: 0px;
+	background-color: transparent;
+	padding: 0px;
+	color: #ff6656;
+}
+.wa-btn-bill:hover {
+	text-decoration:underline;
+}
+.wa-field-lbl-uname {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-table-membership-plan,.wa-table-pay {
+	max-width:975px;
+}
+.wa-btn-order-credit{
+	width: 80px;
+}
+td ,th{
+	word-break:break-all;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (max-width: 768px) {
+	td ,th {
+		word-break: break-word;
+		padding: 8px 2px !important;
+		text-align: center;
+	}
+}
+@media (min-width: 976px) {
+	.wa-radio-xml-Josn {
+		float:right;
+	}
+	.wa-box-payPlan-orderBulkReverse{
+		height:801px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-payPlan-orderBulkReverse{
+			height:836px;
+		}
+	}
+}

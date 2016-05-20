@@ -1,0 +1,31 @@
+.wa-list-sitemap,.wa-list-submenu {
+	font-family: Roboto;
+}
+.wa-list-submenu {
+	font-size: 12px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-weight: bolder;
+	padding-left: 30px;
+}
+.wa-list-sitemap {
+`	font-size: 14px;
+	margin-top:15px;
+	color: #ff6656;
+}
+.wa-list>a {
+	color: #a3a2a2;
+	font-family:open Sans;
+}
+.wa-link-text{
+	color: #333;
+}
+.wa-list{
+	display: inline;
+}
+.wa-list-sitemap>a{
+	color: #ff6656;
+}
+.wa-img-list {
+	padding-left: 50px;
+}

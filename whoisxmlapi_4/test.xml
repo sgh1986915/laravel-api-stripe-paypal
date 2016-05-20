@@ -1,0 +1,11 @@
+<project name="whoisxmlapi" default="init-dev" basedir=".">  
+	<target name="init-dev">
+ 		<copy file="test2.xml" tofile="test3.xml" overwrite="true">
+	        <filterchain>
+	                <replacetoken>INVOICE_ROOT></replacetoken>
+  <replacevalue><![CDATA[two line
+token]]></replacevalue>
+	        </filterchain>
+	    </copy> 
+  </target>
+</project>  

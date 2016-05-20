@@ -1,0 +1,259 @@
+.wa-title-home {
+	color:#000;
+}
+.wa-header-border-top {
+	border-top:4px solid #0c9bdb;
+}
+.wa-about-whoisApi {
+	color:#333333;
+}
+.wa-ourServices-content {
+	color:#333333;
+}
+.wa-btn-orderNow-home , .wa-btn-orderNow-home:hover{
+	background-color:#474747;
+	color:#ffffff;
+	border-color: transparent;
+	font-family: Roboto Condensed;
+	font-size: 14px;
+	padding:5px 25px;
+	margin-top: 12px;
+	margin-bottom: 15px;
+}
+.wa-btn-ourServices-features {
+	margin-top:0px;
+}
+.wa-row-ourServices {
+	margin-top:38px;
+	margin-bottom:49px;
+	margin-right:0px;
+}
+@font-face {
+	font-family:Open Sans;
+	src:url("../fonts/OpenSans-Regular.ttf");
+}
+.wa-searchBox-margin {
+	margin-top:35px;
+	margin-bottom:12px;
+}
+.wa-ourServices-box {
+	height:auto;
+	background-color:#ffffff;
+	cursor:pointer;
+}
+.wa-ourServices-box {
+	border: 4px solid #ffffff;
+}
+.wa-ourServices-box:hover
+{
+	border: 4px solid #ff6656;
+}
+.wa-ourServices {
+	background-image:url("../images/products.jpg");
+	background-color:black;
+	background-attachment:fixed;
+}
+.wa-ourServices-firstRow {
+	margin-bottom:20px;
+}
+.wa-ourServices-heading {
+	color:#ffffff;
+	margin-top:38px;
+}
+.form-control-feedback {
+	position: absolute;
+	top: 0px;
+	right:0px;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color:#ffffff;
+}
+.wa-search {
+	background-color:#ff6656;
+	border-color:#ffffff;
+	color:#ffffff;
+}
+.wa-searchbox-radio {
+	background-color:#ff6656;
+}
+.wa-search-form {
+	padding:0px;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color:#ffffff;
+}
+.wa-field-value-selection {
+	font-family:Open Sans;
+	font-weight:normal;
+	font-size:14px;
+}
+.form-control::-webkit-input-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+.form-control::-moz-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+.wa-exapple {
+	font-family:Open Sans;
+	font-size:12px;
+	color:#ffffff;
+	margin-top:11px;
+}
+.wa-user-stats {
+	margin-bottom: 0px;
+}
+.wa-img-slider {
+	top: 251px;
+}
+.wa-btn-whyUs-rm {
+	margin-top:20px;
+}
+.wa-radio-input{
+	position: relative;
+}
+.wa-field-value-selection-home-XML {
+	margin-right:5px;
+}
+.wa-ourServices-box  {
+	padding:15px;
+}
+.wa-whois-xml-api-title-home {
+	line-height:45px;
+	margin-top:24px;
+	margin-bottom:15px;
+}
+.wa-field-input-selection-radio	{
+	z-index: 100;
+	position: relative;
+	opacity: 0;
+}
+.wa-img-slidermargin{
+	margin-left:70px;
+}
+.wa-unified-consistent {
+	font-family:Roboto Condensed;
+	font-weight:bold;
+	font-size:51px;
+	color:#fff;
+}
+.wa-col-bulkWhois,.wa-col-whoisApi {
+	padding-left:15px;
+}
+.wa-content-whoisWebservice-home{
+	line-height:22px;
+	word-spacing:5px;
+}
+.whoisapi{
+	font-family:Roboto;
+	font-weight:100;
+	font-size:40px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom:-5px;
+}
+.wa-ourServices-col-padding {
+	padding-right:0px;
+}
+.parserSystem {
+	font-family:Roboto;
+	font-weight:100;
+	font-size:40px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.wa-homecontent-whois{
+	float:none;
+}
+.wa-whyus-box-home {
+	margin:35px 0px;
+}
+.wa-features-box-home {
+	margin-bottom:35px;
+}
+.wa-ourServices-lbl {
+	margin-bottom:7px;
+}
+.wa-carousel-slide-home{
+	width: auto;
+}
+.wa-img-ourService {
+	margin:0px auto ;
+}
+.carousel-control{
+	display:none;
+}
+.wa-ourServices-col-padding >a {
+	color: #272727;
+	border-color: transparent;
+	text-decoration: none;
+}
+.wa-features-box-home {
+	height:auto;
+}
+@media (min-width: 768px) {
+	.wa-btn-ourServices-features {
+		margin-top:29px;
+	}
+	.wa-btn-orderNow-home,.wa-btn-orderNow-home:hover {
+		float:right;
+	}
+	.wa-ourServices-box {
+		min-height: 249px;
+		background-color:#ffffff;
+	}
+	.wa-searchBox-home{
+		margin-top:25px;
+	}
+}
+@media (min-width: 976px){
+	.wa-homecontent-whois{
+		float:left;
+	}
+	.wa-features-box-home {
+		margin:35px 0px;
+	}
+	.wa-whyus-box-home {
+		height:408px;
+	}
+}
+@media (min-width: 993px){
+	.wa-carousel-slide-home{
+		width: 933px;
+	}
+	.carousel-control{
+		display:block;
+	}
+	.carousel-control.left {
+		background: none;
+		left: -50px;
+		top:255px;
+		z-index: 99;
+		width:auto;
+}
+	.carousel-control.right {
+		background: none;
+		right: -50px;
+		top: 255px;
+		z-index: 99;
+		width:auto;
+	}
+}
+@media (max-width: 786px){
+	.wa-whois-xml-api-title-home {
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+}
+@-moz-document url-prefix() {
+	.wa-whyus-box-home {
+		height:414px;
+	}
+}

@@ -1,0 +1,1 @@
+<?php include "domain-availability-api_main.php"?>

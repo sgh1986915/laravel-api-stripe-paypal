@@ -1,0 +1,15 @@
+.wa-box-remind{
+	margin-bottom:30px;
+	margin-top: 30px;
+}
+.wa-btn-remind {
+	margin-top:15px;
+}
+.wa-col-remind {
+	margin-top:15px;
+}
+@media (min-width: 768px) {
+	.wa-col-remind {
+		margin-top:0px;
+	}
+}

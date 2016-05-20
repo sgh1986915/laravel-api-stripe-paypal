@@ -1,0 +1,106 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-search{
+	background-color: #ff6656;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.form-control-feedback {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #ffffff;
+}
+.wa-exapple {
+	font-family: Open Sans;
+	font-size: 12px;
+	color: #ffffff;
+}
+.wa-radio-input {
+	position: relative;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-cursor {
+	cursor: pointer;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-home-radio-innerCircle {
+	border-radius: 6px;
+	height: 6px;
+	width: 6px;
+	background-color: white;
+	position: absolute;
+	left: 2.5px;
+	top: 1.5px;
+}
+.wa-home-radio-outerCircle {
+	display: inline-block;
+	border-radius: 14px;
+	border: 2px solid #fff;
+	width: 14px;
+	height: 14px;
+	background-color: #ff6656;
+	position: absolute;
+	z-index: 70;
+	top: 4px;
+	left: 0px;
+}
+.wa-btn-orderNow, .wa-btn-orderNow:hover {
+	background-color: #474747;
+	color: #ffffff;
+	border-color: transparent;
+	font-family: Open Sans;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.form-control::-webkit-input-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+ .form-control::-moz-placeholder {
+		color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+.wa-example-reverseip{
+	margin-bottom:10px;
+}
+.wa-textunderline{
+	text-decoration:underline;
+}
+.wa-example-reverseiplookup{
+	margin-bottom:10px;
+}
+.wa-btn-viewShopping{
+	margin-top: 10px;
+}
+.wa-box-IPlookup-reverseiplookup{
+	margin-bottom:30px;
+	margin-top:30px;
+}

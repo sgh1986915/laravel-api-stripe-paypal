@@ -1,0 +1,35 @@
+.Utility {
+	color:black
+}
+.NodeName {
+	font-weight:bold;
+	color:#0083AF;
+	font-size: 16px;
+	font-family: Open Sans;
+}
+.AttributeName {
+	font-weight:bold;
+	color:black
+}
+.AttributeValue {
+	color:blue
+}
+.NodeValue {
+	color:black;
+	font-family: arial;
+}
+.Element {
+	border-left-color:#6CF;
+	border-left-width:thin;
+	border-left-style:solid;
+	padding-top:0px;
+	margin-top:10px;
+	width: 95%;
+}
+.Clickable {
+	font-weight:900;
+	font-size:large;
+	color:#0083AF;
+	cursor:pointer;
+	vertical-align:middle
+}

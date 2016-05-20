@@ -1,0 +1,156 @@
+<div>
+    <p>
+        <b>Software Prerequiresite for installing Whois API</b>:
+        <ul>
+          <li>Java Virtual Machine(JVM)</li>
+          <li>Tomcat application server(or other application server that supports servlet engine)
+          <li>MYSQL(other db servers are not tested)</li>  
+        </ul>
+    </p>
+    <p>
+        <b>Installation of MYSQL databases</b>:
+    </p>
+    <p>
+    </p>
+    <p>
+        1.       Install MYSQL database server if it's not installed already.  http://dev.mysql.com/downloads/mysql/, for a quick proof of concept you might
+        want to set your root password to root, which matches the default password set in Whois API package.
+    </p>
+    <p>
+    </p>
+    <p>
+        2.       Execute whoiscrawler.sql and whoisapi.sql in db_scripts against your database server, upon successful execution, you should see two new
+        databases called whoiscrawler and whoisapi.  
+    </p>
+    <p>
+    </p>
+    <p>
+       <b> Setup Whois API configuration files:</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        1.       copy all files from config/ into c:\whoiscrawler\ (or /home/whoisxmlapi/ on liunx)
+    </p>
+    <p>
+    </p>
+    <p>
+       <b> Deploy whoisapi webapp:</b>
+    </p>
+    <p>
+    </p>
+    <p>
+1.       Install Tomcat 6.0 if it's not installed already.         <a href="http://tomcat.apache.org/download-60.cgi">http://tomcat.apache.org/download-60.cgi</a>
+    </p>
+    <p>
+    </p>
+    <p>
+        2.       Copy lib/tslib-win.jar into Tomcat's library(eg. C:\Program Files\Apache Software Foundation\Tomcat 6.0\lib, or /opt/tomcat/lib/)
+    </p>
+    <p>
+    </p>
+    <p>
+        3.       Deploy whoisserver.war.  This can be done by simply copying whoisserver.war into tomcat's  webapps folder.
+    </p>
+    <p>
+    </p>
+    <p>
+        4.       Test querying whois information using the default user root
+        <a href="http://localhost:8080/whoisserver/WhoisService?domainName=test.com&amp;username=root&amp;password=root">
+            http://localhost:8080/whoisserver/WhoisService?domainName=test.com&amp;username=root&amp;password=root
+        </a>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>Customization:</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        There are several configuration files within whois api.
+    </p>
+    <p>
+    </p>
+    <p>
+        1.       whoisserver\WEB-INF\classes\general.properties, this file is the root property file that points to several other files:
+    </p>
+    <p>
+    </p>
+    <p>
+        a.       whois.conf is the file that configures whois registries, registrars and other settings, in general you do not need to modify this file.  It
+        points to c:\whoiscrawler\whois.conf (or /home/whoisxmlapi/whois.conf) by default
+    </p>
+    <p>
+    </p>
+    <p>
+        b.      proxy.conf is the file that contains a list of proxy servers that whois api uses.  It points to c:\whoiscrawler\proxy.conf (or /home/whoisxmlapi/proxy.conf) by default.
+    </p>
+    <p>
+    </p>
+    <p>
+        c.       httpproxy.conf is the file that contains a list of http proxy servers that whois api uses.  It points to c:\whoiscrawler\httpproxy.conf  (or /home/whoisxmlapi/httpproxy.conf) by
+        default.
+    </p>
+    <p>
+    </p>
+    <p>
+        2.       whoisserver\WEB-INF\lib\whoiscrawler.jar\hibernate_whoiscrawler.cfg, this file contains the database configuration such as database path
+        pointing to whoiscrawler database.  The default db url is jdbc:mysql://localhost:3306/whoiscrawler.   The default username is root, the default
+        password is root.  You must set the correct database username and password here.
+    </p>
+    <p>
+    </p>
+    <p>
+        3.       whoisserver\WEB-INF\classes\hibernate_whoisapi.cfg.xml, this file contains the database configuration such as database path pointing to
+        whoisapi database.   The default db url is jdbc:mysql://localhost:3306/whoisapi.  The default username is root, the default password is root.  You must
+        set the correct database username and password  here.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+</div>

@@ -1,0 +1,81 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.wa-title-reversewhoisapiapi {
+	margin-bottom:0px;
+}
+.wa-checkbox-reversewhoisapi {
+	margin-right:5px !important;
+}
+.wa-contentLink-reversewhoisapi {
+	font-family:open Sans;
+	color:#333333;
+}
+.wa-pre-content-reversewhoisapi {
+	background-color:#ffffff;
+	border: 0px;
+	border-radius: 0px;
+	font-family: Open Sans;
+	font-weight: normal;
+}
+.wa-search-eg-box ,.wa-historicRecord-reverseWhois{
+	margin-top:25px;
+}
+.wa-box-output-reversewhoisapi{
+	margin-bottom:30px;
+	height:auto;
+}
+.wa-contentLink-reversewhoisapi{
+	padding-top: 10px;
+	word-wrap:break-word;
+}
+.wa-box-output-reversewhoisapiapi {
+	overflow:hidden;
+}
+.wa-reversewhoisapi{
+	background-color: transparent;
+	border: 0px;
+	border-radius: 0px;
+	font-family: Open Sans;
+	font-weight: normal;
+}
+.wa-radio-xml-Josn {
+	float:left;
+}
+.wa-box-reverseWhois{
+	margin-bottom:30px;
+}
+.wa-box-output-reversewhoisapiapi {
+	height:auto;
+	overflow:hidden;
+}
+.wa-box-output-reversewhoisapiapi{
+	margin-top: 10px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 830px) {
+	.wa-radio-xml-Josn {
+		float:right;
+	}
+}
+@media (min-width: 976px){
+	.wa-box-output-reversewhoisapiapi{
+		height:807px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-output-reversewhoisapiapi {
+			height:820px;
+		}
+	}
+}

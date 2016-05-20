@@ -1,0 +1,77 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-lbl-uname {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.wa-content-text-orderNow {
+
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-radio-inline {
+	padding:0px;
+	position:relative;
+}
+.wa-field-lbl {
+	font-weight: 100 !important;
+	font-size: 15px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+.wa-box-payPlan-orderNow {
+	height:auto;
+}
+.wa-search-eg-box {
+	margin-top: 25px;
+}
+.wa-content-text-confirmProduct-orderapiSummary{
+	margin-bottom:25px;
+}
+.wa-box-confirmProduct-orderapiSummary {
+	margin-bottom:30px;
+}
+.wa-textbox-width {
+	width:100px;
+	display: inline;
+}
+.wa-table-orderapiSummary {
+	max-width:975px;
+}
+td ,th{
+	word-break:break-all;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+.wa-btn-next-orderapiSummary{
+	width: 80px;
+}
+@media (min-width: 976px) {
+	.wa-box-confirmProduct-orderapiSummary {
+		margin-bottom:15px;
+	}
+}
+@media (max-width: 768px) {
+	td ,th {
+		word-break: break-word;
+		padding: 8px 2px !important;
+		text-align: center;
+	}
+}

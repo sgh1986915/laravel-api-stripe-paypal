@@ -1,0 +1,59 @@
+ul {
+    list-style-type: none;
+}
+
+
+div.demolayout {
+    margin: 0 0 20px;
+    width: 100%;
+}
+ul.demolayout {
+    background: url("../images/pixel.gif") repeat-x scroll left bottom transparent;
+    float: left;
+    list-style-type: none;
+    width: 100%;
+}
+ul.demolayout li {
+    float: left;
+    margin: 0 2px 0 0;
+}
+ul.demolayout a {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC #CCCCCC -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #666666;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+ul.demolayout a:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+ul.demolayout a.active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #0000FF;
+    cursor: default;
+    padding-bottom: 5px;
+}
+.tabs-container {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    clear: left;
+    padding: 20px 8px 0;
+}
+

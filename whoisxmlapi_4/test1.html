@@ -1,0 +1,140 @@
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<link href="/whoisxmlapi/whoisxmlapi_prod.css" rel="stylesheet" type="text/css"/>
+<link href="/whoisxmlapi/css/jqtree.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+
+     // Load jQuery
+     google.load("jquery", "1.7");
+      google.load("jqueryui", "1.8");
+     google.setOnLoadCallback(function() {
+         init();
+     });
+
+ </script>
+
+
+ <script type ="text/javascript" src="/whoisxmlapi/js/dev/tree.jquery.js"></script>
+
+  <script type="text/javascript">
+
+	
+ 	function init(){ 
+		
+		$(document).ready(function(){ 
+		
+			 var data = [
+    {
+        label: 'node1',
+        children: [
+            { label: 'child1' },
+            { label: 'child2' }
+        ]
+    },
+    {
+        label: 'node2',
+        children: [
+            { label: 'child3' }
+        ]
+    }
+];
+
+
+	   $('#data').tree({data:data, autoOpen:1});
+                
+		});
+	}
+	
+
+
+
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="/whoisxmlapi/css/custom-theme/jquery-ui-1.8.8.custom.css" />
+
+
+<style>
+.jqtree-title span{
+	color:red;
+	
+}
+.jsonview span{
+	color: green;
+}
+.jsonview span{
+	background-color: yellow;
+}
+#data span{
+	color:blue;
+}
+.jsonview{
+	border:1px solid black;
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+<!--header start -->
+<div id="header_rw">
+  <div id="header_nav">
+	    <ul> 
+      <li></li>
+          </ul>  </div>
+  <h2>&nbsp;</h2>
+</div>
+<div id="header_bottom_rw_wrap">
+  <div id="header_bottom_rw">
+    <div id="header_center_rw"></div>
+</div>
+</div>
+
+
+
+
+<div style="clear:both"></div>
+
+
+<!--header end -->
+<!--body start -->
+<div id="body">
+	
+<!--left panel start --><!--left panel end-->
+<!--right panel start -->
+<div id="right">
+  
+
+<div class="rightTxt2">
+
+
+<div id="data" class="jsonview" style="width:100%;height:200px"></div>
+
+
+
+</div>
+<!--right panel end -->
+<br class="spacer" />
+
+
+
+</div>
+
+</body>
+</html>

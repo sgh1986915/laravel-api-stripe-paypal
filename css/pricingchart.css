@@ -1,0 +1,51 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-box-paymentpolicy-pricingchart{
+	margin-top: 30px;
+}
+.wa-title-pricingchart {
+	margin-bottom:0px;
+}
+.wa-content-text-pricingchart {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-subtitle-paypal-pricingchart{
+	font-family:Open Sans;
+	font-weight:bold;
+}
+.wa-box-membersplan-pricingchart{
+    height:auto;
+ }
+.wa-table-pricingchart {
+	max-width:975px;
+}
+td ,th{
+	word-break:break-all;
+}
+.wa-box-paymentpolicy-pricingchart{
+	margin-bottom: 30px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+ @media (min-width: 976px) {
+	.wa-box-membersplan-pricingchart {
+		height:729px;
+	}
+   .wa-box-paymentpolicy-pricingchart{
+		margin-bottom: 15px;
+   }
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-membersplan-pricingchart {
+			height:737px;
+		}
+	}
+}

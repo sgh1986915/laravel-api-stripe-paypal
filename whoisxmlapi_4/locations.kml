@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for Whois API LLC.</name>
+		<atom:link rel="related" href="http://www.whoisxmlapi.com" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[Whois API LLC]]></name>
+				<address><![CDATA[340 S LEMON AVE #1362 , WALNUT, CA , 91789, United States]]></address>
+				<description><![CDATA[]]></description>
+				<Point>
+					<coordinates>-117.8596614,34.0120442,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

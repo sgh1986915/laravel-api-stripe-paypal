@@ -1,0 +1,113 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.wa-img-iconLock ,.wa-img-payPal1{
+	margin: 0 auto;
+	display: inline-block;
+}
+.wa-box-paymentoption-newDomain {
+	overflow:hidden;
+}
+.wa-content-text-newDomain {
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-box-licenseterms-newDomain {
+	height:auto;
+}
+.wa-field-lbl {
+	font-weight: 100 !important;
+	font-size: 15px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+.wa-paymentimage-newDomain{
+	margin-top:15px;
+}
+.wa-box-paymentoption-newDomain{
+	height:auto;
+}
+.wa-search-eg-box {
+	margin-top: 25px;
+}
+.wa-img-check-td{
+	margin: 0 auto;
+	min-width: 33px;
+}
+.wa-table-trheight{
+	height:48px;
+}
+.wa-box-cardnumber{
+	height:340px;
+}
+.wa-col-exp-date {
+	padding-left:0px;
+	margin-bottom:15px;
+}
+.wa-col2-exp-date{
+	padding-right:0px;
+}
+.wa-slash{
+	font-size:28px;
+	margin-left: -23px;
+}
+td ,th{
+	word-break:break-all;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+.wa-box-cardnumber  {
+	margin-top:10px;
+}
+.wa-table-newDomain  {
+	max-width:975px;
+}
+.wa-box-listnewregister-newDomain {
+	margin-bottom:0px;
+}
+.wa-btn-next-newDomain{
+	width: 80px;
+	    margin-top: 15px;
+}
+@media (max-width: 768px) {
+	td ,th{
+		padding:8px 2px !important;
+	}
+	.wa-lbl-radio{
+		text-align:center;
+	}
+	.wa-input-radio-table {
+		margin:0 auto !important;
+		display:table;
+	}
+	.wa-lbl-regular,.wa-lbl-expdited {
+		text-align:center;
+	}
+}
+@media (min-width: 976px) {
+	.wa-box-cardnumber{
+		height:auto;
+	}
+}
+@media (min-width: 976px) {
+	.wa-box-newDomain {
+		padding:15px;
+	}
+	.wa-box-listnewregister-newDomain {
+		margin-bottom:30px;
+	}
+	.wa-box-paymentoption-newDomain,.wa-box-licenseterms-newDomain{
+		margin-bottom: 30px;
+	}
+}

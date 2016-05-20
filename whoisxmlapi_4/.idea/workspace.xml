@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="fa0ac2d6-1707-403a-9db5-23b5a74139e0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain_name_data/DomainNameDataAccountManager.php" afterPath="$PROJECT_DIR$/domain_name_data/DomainNameDataAccountManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rate_limit/RateLimitSettings.php" afterPath="$PROJECT_DIR$/rate_limit/RateLimitSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rate_limit/RateLimitTest.php" afterPath="$PROJECT_DIR$/rate_limit/RateLimitTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bulk-whois-lookup_main.php" afterPath="$PROJECT_DIR$/bulk-whois-lookup_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/cctld_whois_database_product.php" afterPath="$PROJECT_DIR$/models/cctld_whois_database_product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain_name_data/fillForUser.php" afterPath="$PROJECT_DIR$/domain_name_data/fillForUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse-ip/reverse-ip-pricing_main.php" afterPath="$PROJECT_DIR$/reverse-ip/reverse-ip-pricing_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse-whois-intro_main.php" afterPath="$PROJECT_DIR$/reverse-whois-intro_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse-whois-api/search.php" afterPath="$PROJECT_DIR$/reverse-whois-api/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/whois_server.inc" afterPath="$PROJECT_DIR$/users/whois_server.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/whois_server.tpl.inc" afterPath="$PROJECT_DIR$/users/whois_server.tpl.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="whoisxmlapi.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="whoisxmlapi" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BrandMonitor.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/brand-monitor/BrandMonitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="1" selection-start="370" selection-end="370" vertical-scroll-proportion="0.6169355" vertical-offset="0" max-vertical-offset="496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrantMonitor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registrant-monitor/RegistrantMonitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="58" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Monitor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monitor/Monitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="12" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrant_alert.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registrant-alert-api/registrant_alert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="19" selection-start="2262" selection-end="2262" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1717">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registrant-alert-api/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="8" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1717">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBrandMonitor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brand-monitor/TestBrandMonitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="5" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRegistrantMonitor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registrant-monitor/TestRegistrantMonitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="19" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Email.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/email/Email.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brand_alert.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brand-alert-api/brand_alert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="6" selection-start="4841" selection-end="4841" vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3519">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brand-alert-api/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/code/php/reverse_ip_api_sample_code.txt" />
+        <option value="$PROJECT_DIR$/code/php/reverse_ip_api_sample_code.php" />
+        <option value="$PROJECT_DIR$/business_def.php" />
+        <option value="$PROJECT_DIR$/code/java/ReverseIPAPISample.java" />
+        <option value="$PROJECT_DIR$/paypal/paypal.php" />
+        <option value="E:/temp/sphinx.conf.php" />
+        <option value="$PROJECT_DIR$/price.php" />
+        <option value="$PROJECT_DIR$/admin_utils/PriceCalc.php" />
+        <option value="$PROJECT_DIR$/newaccount.php" />
+        <option value="$PROJECT_DIR$/email/Email.php" />
+        <option value="$PROJECT_DIR$/brand-alert-api/brand_alert.php" />
+        <option value="$PROJECT_DIR$/brand-monitor/TestBrandMonitor.php" />
+        <option value="$PROJECT_DIR$/brand-monitor/BrandMonitor.php" />
+        <option value="$PROJECT_DIR$/registrant-monitor/TestRegistrantMonitor.php" />
+        <option value="$PROJECT_DIR$/monitor/Monitor.php" />
+        <option value="$PROJECT_DIR$/registrant-monitor/RegistrantMonitor.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1438" />
+    <option name="height" value="858" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whoisxmlapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrandMonitor" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="codero1_whoisxmlapi" serverId="ab98ee8b-5304-4136-938c-4936a6de1c8b">
+    <servers>
+      <server id="34d8d4ac-97c8-4196-8005-58c6df483b73">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="47fa2f8b-77bd-4b80-8d39-b0004967f98f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ab98ee8b-5304-4136-938c-4936a6de1c8b">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\whoisxmlapi\registrant-monitor" />
+      <recent name="C:\xampp\htdocs\whoisxmlapi\code\php" />
+      <recent name="C:\xampp\htdocs\whoisxmlapi\js" />
+      <recent name="C:\xampp\htdocs\whoisxmlapi\code\java" />
+      <recent name="C:\xampp\htdocs\whoisxmlapi" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="ab98ee8b-5304-4136-938c-4936a6de1c8b" server_name="codero1_whoisxmlapi">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Owner\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\xampp\htdocs\whoisxmlapi" />
+          <option name="myCopyRoot" value="C:\xampp\htdocs\whoisxmlapi" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\xampp\htdocs\whoisxmlapi" />
+          <option name="myCopyRoot" value="C:\xampp\htdocs\whoisxmlapi" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa0ac2d6-1707-403a-9db5-23b5a74139e0" name="Default" comment="" />
+      <created>1385368295832</created>
+      <updated>1385368295832</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1386467777105</created>
+      <updated>1386467777105</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1388386439115</created>
+      <updated>1388386439115</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1389900412114</created>
+      <updated>1389900412114</updated>
+    </task>
+    <task id="LOCAL-00004" summary="reverse ip">
+      <created>1390781497124</created>
+      <updated>1390781497124</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bulk file upload">
+      <created>1391644345105</created>
+      <updated>1391644345105</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="1" width="1438" height="858" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23922114" sideWeight="0.4993565" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14047287" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.7273992" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14719173" sideWeight="0.6628734" order="1" side_tool="false" content_ui="tabs" x="1082" y="112" width="388" height="577" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16602316" sideWeight="0.6703755" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22892442" sideWeight="0.8116976" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18830243" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20527045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25869262" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="reverse ip" />
+    <MESSAGE value="bulk file upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="bulk file upload" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin_utils/PriceCalc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_utils/price_calc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="619" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newaccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="13" selection-start="2694" selection-end="2694" vertical-scroll-proportion="-9.692307" vertical-offset="1040" max-vertical-offset="2550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forgotpassword_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-9.153846" vertical-offset="102" max-vertical-offset="2584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand-alert-api/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="4723" selection-end="4723" vertical-scroll-proportion="1.8431373" vertical-offset="3188" max-vertical-offset="4131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/email/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand-alert-api/brand_alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="6" selection-start="4841" selection-end="4841" vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registrant-alert-api/registrant_alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="19" selection-start="2262" selection-end="2262" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand-monitor/TestBrandMonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registrant-alert-api/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="8" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registrant-monitor/TestRegistrantMonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="19" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/Monitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registrant-monitor/RegistrantMonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand-monitor/BrandMonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="370" selection-end="370" vertical-scroll-proportion="0.6169355" vertical-offset="0" max-vertical-offset="496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand-alert-api/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

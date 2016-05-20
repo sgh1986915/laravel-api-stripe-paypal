@@ -1,0 +1,25 @@
+/*invoices table */
+.ui-jqgrid,.ui-jqgrid-view,.ui-state-default,.ui-jqgrid-bdiv,.ui-jqgrid-htable{
+	max-width: 896px;
+	width: 100% !important;
+}
+th#myReportsGrid_invoice_date {
+	max-width:256px;
+	width:100% !important;
+}
+th#myReportsGrid_invoice_num ,th#myReportsGrid_invoice_desc{
+	max-width:282px;
+	width:100% !important;
+}
+th#myReportsGrid_invoice_amount {
+	max-width:76px;
+	width:100% !important;
+}
+.ui-jqgrid .loading {
+	display: block;
+	width: auto !important;
+	margin: 0 auto;
+	position: absolute;
+	top: 45%;
+	left: 15%;
+}

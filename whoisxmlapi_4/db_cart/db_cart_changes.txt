@@ -1,0 +1,20 @@
+DB_cart Class: Updates & changes 
+Last updated: 2006-06-14
+
+/// need to empty related emptty rows together with the roder table
+
+version 1.13 - This version is a big update, there modifications and improvements inside the main class file, several examples and also the table structure is extended. In this version there two additional fields for the shipment values (name2 and address2). All messages are available in German, English and Dutch language. The standard text inside the e-mail messages is in external files now, this content is parsed inside the improved e-mail method.
+
+version 1.12 - There was bug inside the method remove_old_orders(), this error is fixed in this version. I removed also some small bugs inside the "stock" extenstion. It's possible to add products to the shopping cart on a different way: If the setting SHOW_CONTINUE = true a continue page will show up. All example pages are using this new feature. To make this feature complete there are new example files included (for the regular and the stock version). The manual is updated too, to catch this new functions.
+
+version 1.11 - In older version it wasn't possible to delete a single row via the checkout page. From now on, if the value of the quantity is "0" after submit the row will be deleted. Check these modified methods: messages(), update_row() and the new method delete_row().
+
+version 1.10 - The new extension "db_stock_cart" make it possible to handle shops where the "on Stock" amount is important. With this extension it's possible to handle old orders if the stock of a product is changed (the same to the price). Order rows where the stock is on zero will be removed and order values higher then the stock will be updated. The user gets information about how many rows are updated.
+
+version 1.04 - there was a small bug inside the handle_cart_row() method, it was not possible to change the variable $replace. This is fixed now and the update_row() can handle this parameter too. I added an option to recover old orders for customer during the next access. Check the methods db_cart() and remove_old_orders() and notice the new constant RECOVER_ORDER. The new constant VALID_UNTIL defines how much time an old order will be recoverd. There will be a new method to remove old unused orders in the next version(s).
+
+version 1.03 - Because there are problems with the euro sign I modified the method format_value() a little, the methods messages() and mail_order() are modified too. With this release I created the manual about how to use this class with explanations about how the files "db_cart_example.php" and "db_cart_checkout_example.php" are used.
+
+version 1.02 - To make it possible to add some message to an order, there is an additional field inside the shipment table. the checkout example has some new text area. The following methods are modified: messages(), set_shipment_data(), update_shipment() and mail_order(). Check also the conformation example file.
+
+version 1.01 - I replaced the variable "total_rows" with a new method that get the records from the database. The method show_ordered_rows() and the examples are affected by this modification. I changed the datatype for the product id (length = 20) to handle also not number types, affected methods: mail_order(), messages(), check_existing_row() and insert_row(). There is a new example available with only "Add to cart" image buttons.

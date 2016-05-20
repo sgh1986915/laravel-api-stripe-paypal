@@ -1,0 +1,151 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-title-innerpage {
+	margin-bottom:0px;
+}
+.wa-textspacing{
+	margin-bottom:25px;
+}
+.wa-content-text-innerpage {
+	margin-top:20px;
+	margin-bottom:25px;
+	color:#333333;
+}
+.wa-box-reverse-innerpg{
+	margin-top: 30px;
+  	margin-bottom: 30px;
+}
+.keyFeature-content,.keyFeature-Subcontent {
+	color:#333333;
+	font-family:Open Sans;
+	font-weight:normal;
+}
+.wa-kf-col {
+	padding-left:10px;
+	padding-right:10px;
+}
+.keyFeature-content {
+	font-size:18px;
+}
+.keyFeature-Subcontent {
+	font-size:16px;
+}
+.wa-video-section {
+	background-color:#393939;
+}
+.wa-section-title {
+	color:#000;
+}
+.wa-desktop-bg  {
+	margin-bottom:-98px;
+	margin-top:35px;
+}
+.wa-ourFeatures-bg {
+	position:relative;
+}
+.wa-img-sample-record {
+	margin-left:20px;
+	margin-bottom:107px;
+}
+.wa-section-title-keyfeatures-innerPage {
+	margin:40px 0px;
+}
+.wa-img-check-innerPage {
+	display:inline-block;
+}
+.wa-img-video-innerPage {
+	margin:52px auto;
+}
+.wa-kf-background {
+	background-color:#f1f1f1;
+	padding:15px;
+	margin-bottom:20px;
+	min-height:auto;
+}
+.wa-check-background {
+	background-color:#f1f1f1;
+	margin-bottom:20px;
+	padding:15px;
+}
+.wa-ourFeatures-firstPart {
+	min-height:auto;
+	width:auto;
+	margin-right:0px;
+}
+.wa-img-kf-innerPage {
+	margin:0 auto;
+}
+.wa-ourFeatures-box {
+	height:auto;
+}
+.wa-buffer {
+	height:0px;
+}
+.wa-ourFeatures-box {
+	margin: 35px 0px;
+}
+.wa-btn-viewBulk-innerpage,.wa-btn-viewBulk-innerpage:hover {
+	margin-top:40px;
+	margin-bottom:40px;
+	border-radius:5px;
+	Font-family:roboto;
+	font-weight:bold;
+	font-size:14px;
+}
+ .wa-checkbox-innerpg {
+	margin-right:5px !important;
+}
+.wa-radio-input-moreOption {
+	width: auto;
+	float: right;
+}
+.wa-trustedCustomer-footer {
+	margin-top:30px;
+}
+a:hover, a:focus {
+	text-decoration:none;
+}
+.wa-video-innerpage {
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+@media (min-width: 976px) {
+	.wa-ourFeatures-firstPart {
+		min-height:305px;
+		width:440px;
+		margin-right: 40px;
+
+	}
+	.wa-ourFeatures-box {
+		height:342px;
+		margin-bottom: 30px;
+	}
+	.wa-img-kf-innerPage {
+		margin:0px auto;
+	}
+	.wa-img-desktop {
+		margin-left:0px;
+	}
+	.wa-trustedCustomer-footer {
+		margin-top:0px;
+	}
+}
+@media (min-width: 768px) {
+	.wa-kf-background {
+		margin-bottom:0px;
+		min-height:190px;
+	}
+	.wa-video-innerpage {
+		width: 578px;
+		height: 360px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+}

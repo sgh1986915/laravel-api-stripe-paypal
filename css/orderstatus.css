@@ -1,0 +1,75 @@
+.wa-field-lbl {
+	font-weight: 100 !important;
+	font-size: 15px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+.wa-box-paymentpolicy {
+	margin-bottom:30px;
+}
+.wa-subtitle-paypal-orderstatus {
+	font-family: Open Sans;
+	font-weight: bold;
+	margin-top:10px;
+}
+.wa-img-paypal2-orderstatus {
+	display:inline-block;
+}
+.wa-col-exp-date {
+	padding-left:0px;
+	margin-bottom:15px;
+}
+.wa-col2-exp-date{
+	margin-top: -35px;
+	margin-left: 21px;
+}
+.wa-slashsize-orderstatus{
+	font-size:25px;
+}
+.wa-btn-orderstatus {
+	margin-top:15px;
+}
+.wa-securecarddetails-form {
+	width:auto;
+}
+.wa-table-orderstatus {
+	max-width:975px;
+}
+td ,th{
+	word-break:break-all;
+}
+.wa-box-payPlan-orderstatus {
+	margin-bottom:0px;
+ }
+ .wa-btn-next-orderstatus{
+ 	width: 80px;
+ }
+ .wa-paymentradio{
+ 	margin-bottom: 15px;
+ }
+@media (min-width: 550px) {
+	.wa-securecarddetails-form {
+		width:450px;
+	}
+}
+@media (min-width: 976px) {
+	.wa-box-payPlan-orderstatus {
+		margin-bottom:30px;
+	 }
+	 .wa-box-paymentoption-orderstatus{
+	 	margin-bottom: 30px;
+	 }
+	 .wa-box-paymentpolicy {
+		margin-bottom:15px;
+	}
+ }
+ @media (max-width: 768px) {
+	td ,th {
+		word-break: break-word;
+		padding: 8px 2px !important;
+		text-align: center;
+	}
+}

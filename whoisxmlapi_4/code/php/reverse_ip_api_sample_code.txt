@@ -1,0 +1,14 @@
+<?php
+// Fill in your details //
+$username = "YOUR_USERNAME";
+$password = "YOUR_PASSWORD";
+$input = "google.com";
+$format = "JSON"; //or XML
+
+$url = "http://www.whoisxmlapi.com/api/reverseip/$input?username=$username&password=$password&outputFormat=$format";
+if($format=='JSON'){
+  // Get and build the JSON object
+  $result = json_decode(file_get_contents($url));
+  print_r($result);
+}
+?>

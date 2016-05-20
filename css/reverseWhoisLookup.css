@@ -1,0 +1,139 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-form-rw-lookup{
+	margin-bottom:25px;
+}
+.wa-box-rw-lookup {
+	margin-bottom:30px;
+	margin-top: 30px;
+}
+.wa-table-gry-bg {
+	background-color: #f4f4f4;
+}
+.wa-radio-input-moreOption {
+	width: auto;
+}
+.wa-navbar-collpase-rw-lookup {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.wa-tab-background {
+	background-color:#ffffff;
+}
+.wa-box-search-terms-rw-lookup {
+	margin-bottom:30px;
+}
+.wa-order-report-rw-lookup {
+	margin-bottom:20px;
+}
+.wa-btn-pricing-lookup{
+	margin-right:15px;
+}
+#wa-pricing-rw-lookup {
+	display:none;
+}
+.wa-btn-order-rw-new-lookup {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.wa-box-payPlan-reversewhoislookuppricing {
+	height:auto;
+}
+.wa-box-payPlan-reversewhoislookuppricing,.wa-box-membership-reversewhoislookuppricing,.wa-box-Secure-reversewhoislookuppricing,.wa-box-standardreport-reversewhoislookuppricing {
+	border:none;
+}
+.wa-table-pricing {
+	max-width:975px;
+}
+.wa-table-pricing td,.wa-table-pricing th {
+	word-break:break-all;
+}
+.wa-box-Secure-reversewhoislookuppricing,.wa-box-payPlan-reversewhoislookuppricing,.wa-box-membership-reversewhoislookuppricing {
+	margin-bottom:0px;
+}
+.wa-table-rw-lookup .ui-jqgrid,.wa-table-rw-lookup .ui-jqgrid-view,.wa-table-rw-lookup .ui-state-default,.wa-table-rw-lookup .ui-jqgrid-htable,.wa-table-rw-lookup .ui-jqgrid-bdiv,.wa-table-rw-lookup #revWhoisGrid, #myReportsGrid  {
+	/*max-width: 896px;*/
+	width: 100% !important;
+}
+th#revWhoisGrid_domain_name {
+	max-width: 320px;
+	width: 100% !important;
+}
+th#revWhoisGrid_whois_records {
+	max-width: 576px;
+	width: 100% !important;
+}
+td#revWhoisPager_center {
+	max-width:261px;
+	width:auto !important;
+}
+.wa-table-rw-lookup .ui-jqgrid .loading {
+	display: block;
+	width: auto !important;
+	margin: 0 auto;
+	position: absolute;
+	top: 45%;
+	left: 5%;
+}
+.wa-tab-navbar-rw-lookup {
+	width: 100%;
+}
+.wa-tab-li-menu-rw-lookup {
+	width:33.33%;
+}
+.wa-btn-reverse-whoislookup{
+	width: 80px;
+}
+.wa-content-text-reversewhoislookuppricing {
+	margin-bottom:25px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 768px) {
+	li.wa-border-right-tab {
+		border-right:1px solid #dddddd;
+	}
+}
+@media (max-width: 768px) {
+	.navbar-collapse.wa-navbar-collpase-rw-lookup {
+		padding-left:15px;
+	}
+	.wa-tab-navbar-rw-lookup ,.wa-tab-li-menu-rw-lookup {
+		width: auto;
+	}
+	.wa-navbar-collpase-rw-lookup {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	td ,th{
+		padding:8px 2px !important;
+		text-align:center;
+	}
+}
+@media (min-width: 976px) {
+	.wa-box-payPlan-reversewhoislookuppricing {
+		height:672px;
+	}
+	.ui-jqgrid-bdiv,.ui-jqgrid .ui-jqgrid-hdiv,.ui-jqgrid .ui-jqgrid-titlebar ,.ui-jqgrid {
+		width:auto;
+	}
+	.wa-box-payPlan-reversewhoislookuppricing,.wa-box-membership-reversewhoislookuppricing,.wa-box-Secure-reversewhoislookuppricing {
+		border:1px solid #e5e5e5;
+	}
+	.wa-box-Secure-reversewhoislookuppricing,.wa-box-payPlan-reversewhoislookuppricing,.wa-box-membership-reversewhoislookuppricing {
+		margin-bottom:30px;
+	}
+	.wa-tab-content-rw-lookup {
+		padding:15px;
+	}
+
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-payPlan-reversewhoislookuppricing  {
+			height:657px;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.wa-tab-navbar .navbar-nav>.active>a, .wa-tab-navbar .navbar-nav>.active>a:hover{
+	background-color:#ffffff!important;
+	color:#333333 !important;
+}
+.navbar.navbar-default.wa-tab-navbar {
+	margin-bottom:0px !important;
+}
+.wa-title {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wa-col-management {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.wa-tab-navbar {
+	min-height:44px !important;
+	background-color:#eeeeee;
+	border-bottom-color: #ffffff;
+}
+.wa-tab-background {
+	border: 1px solid #dddddd;
+	margin-top:30px;
+	padding:5px;
+}
+.wa-table-account-management {
+	margin-bottom:0px;
+}
+.wa-navbar-nav {
+	margin-top:0px;
+}
+.wa-tab-navbar-management {
+	width:auto;
+}
+.wa-tab-navbar .navbar-nav>.active>a, .wa-tab-navbar .navbar-nav>.active>a:hover {
+	color: #ffffff !important;
+	background-color: #ff6656!important;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+@media (min-width: 976px) {
+	.wa-tab-background {
+		padding: 15px;
+	}
+}
+@media (min-width: 768px) {
+	li.wa-border-right-tab {
+		border-right:1px solid #dddddd;
+	}
+	li.wa-border-right-tab:last-child {
+		border-right:0;
+	}
+	.wa-navbar-collpase-management {
+		padding:0px;
+	}
+	.wa-navbar-nav {
+		width:100%;
+	}
+	.wa-tab-invocies,.wa-tab-account-balance,.wa-tab-profile {
+		/*width:23.33%;*/
+		width:33.33%; /* Temp Fix */
+	}
+	.wa-tab-api-key-management {
+		width:30%;
+	}
+	li.wa-tab-li-menu:first-child:after {
+		content: '';
+		width: 1px;
+		height: 5px;
+		position: absolute;
+		bottom: -3px;
+		left: -1px;
+		background: #DDD;
+	}
+	li.wa-tab-li-menu:last-child:after {
+		content: '';
+		width: 1px;
+		height: 5px;
+		position: absolute;
+		bottom: -3px;
+		right: -1px;
+		background: #DDD;
+	}
+	.wa-tab-background {
+		border-top: 0px;
+		margin-top:0px;
+	}
+}

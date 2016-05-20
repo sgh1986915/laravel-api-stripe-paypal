@@ -1,0 +1,57 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-title-whoisdd {
+	margin-bottom:0px;
+}
+.wa-box-pricingwhois-whoisdd{
+	height:auto;
+}
+.wa-box-pricingAlexa-whoisdd {
+	height:auto;
+}
+.wa-box-pricingwhois-whoisdd{
+	height:auto;
+}
+.wa-content-text-whoisdd {
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-section-title-possibleapps-whoisdd {
+	margin-bottom:10px;
+}
+.wa-box-possibleapps-whoisdd,.wa-box-pricingAlexa-whoisdd,.wa-box-pricingwhois-whoisdd{
+	margin-bottom:0px;
+}
+.wa-table-pricinghistoric-whoisdd {
+	max-width:975px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 976px) {
+	.wa-box-pricingAlexa-whoisdd {
+		height:785px;
+	}
+	.wa-box-pricingwhois-whoisdd{
+		height:785px;
+	}
+	.wa-box-possibleapps-whoisdd,.wa-box-pricingAlexa-whoisdd,.wa-box-pricingwhois-whoisdd{
+		margin-bottom:30px;
+	}
+	.wa-box-pricingHistoric-Whoisdd{
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	td ,th {
+		word-break: break-word;
+		padding: 8px 2px !important;
+		text-align: center;
+	}
+}
+

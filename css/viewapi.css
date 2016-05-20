@@ -1,0 +1,33 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-title-viewapi {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wa-box-viewapi {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+thead {
+	font-family:arial;
+	font-size:13px;
+	color: #444444;
+	word-wrap: break-word;
+	word-break:normal;
+}
+tbody {
+	font-family: arial;
+	font-size: 13px;
+	color: #8c8c8c;
+	word-wrap: break-word;
+}
+.wa-table-api-o-view {
+	background-color:#ffffff;
+	margin-bottom:30px;
+}
+@media (max-width: 550px){
+	tbody,thead {
+		font-size: 11px;
+	}
+}

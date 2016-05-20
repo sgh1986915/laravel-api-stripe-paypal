@@ -1,0 +1,14 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-title-registrarwhois,.wa-box-whoisHosting-registraWhois {
+	margin-bottom:0px;
+}
+@media (min-width: 976px) {
+	.wa-box-whoisHosting-registraWhois {
+		margin-bottom:30px;
+	}
+}	

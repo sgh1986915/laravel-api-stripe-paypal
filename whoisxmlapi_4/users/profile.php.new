@@ -1,0 +1,86 @@
+<?
+require_once("users.inc");
+connect_to_users_db();
+
+$sql = "SELECT u.email,photoUrl,photoWidth,photoHeight,b.userId,startDate,firstName,lastName,title,'department',biography,phone1Type,phone1,phone2Type,phone2,phone3Type,phone3,im_type,im_userid FROM $USERS_DB.Profiles b, $USERS_DB.Users u WHERE u.userId=b.userId AND b.userId=$id";
+$query = mysql_query($sql) or die ("The query $sql failed: $sql. ".mysql_error()); 
+if (list($email,$photoUrl,$photow,$photoh,$id,$start,$fname,$lname,$title,$department,$bio,$p1type,$p1,$p2type,$p2,$p3type,$p3) = mysql_fetch_row($query)) {
+} else {
+  echo "error";
+}
+?>
+
+<font size=-1>
+<table cellpadding=3 cellspacing=0 border=0 width="100%">
+<tr>
+<td width="20%" align=right><font size=-1><b>Name:</b></td>
+<td width="80%"><font size=-1><?="$fname $lname"?>
+<? if ($ext != "") { 
+     echo " (x$ext)";
+   } ?>
+</td>
+</tr>
+<tr>
+<td align=right><font size=-1><b>Email:</b></td>
+<td><font size=-1><a href="mailto:<?=$email?>"><?=$email?></a></td>
+</tr>
+<tr>
+<td align=right><font size=-1><b>Title:</b></td>
+<td><font size=-1><?=$title?></td>
+</tr>
+<?
+if ($start != "") {
+?> 
+<tr>
+<td align=right><font size=-1><b>Start Date:</b></td>
+<td><font size=-1><? list($starty,$startm,$startd) = split("-",$start); echo "$startm/$startd/$starty"; ?></td>
+</tr>
+<?
+}
+?>
+<tr>
+<td align=right><font size=-1><b>Department/Team:</b></td>
+<td><font size=-1><?=$teamName?></td>
+</tr>
+<? 
+  for ($i=1;$i<=3;$i++) { 
+    $type = "p".$i."type";
+    $phone = "p".$i;
+    if (${$phone} != "") {
+?>
+<tr>
+<td align=right><font size=-1><b>Phone <?=$i?>:</b></td>
+<td><font size=-1><?="${$phone} (${$type})"?></td>
+</tr>
+<?
+    } 
+  } 
+?>
+<tr>
+<td align=right><font size=-1><b>Preferred Instant Messager:</b></td>
+<td><font size=-1><?=$im_type?>: <?=$im_userid?></td>
+</tr>
+<tr valign=top>
+<td align=right><font size=-1><b>Biography:</b></td>
+<td><font size=-1><?=$bio?></td>
+</tr>
+
+<tr valign=top>
+<td colspan=2><font size=-1><b>Photo:</b>
+<p>
+<? if ($photoUrl != "") { ?>
+<img src="<?=$photoUrl?>"<?=($photow != 0 ? " width=$photow" : "")?><?=($photoh != 0 ? " width=$photoh" : "")?>>
+<? } else { ?>
+No photo available.
+<? } ?>
+
+</td>
+</tr>
+
+</table>
+
+</form>
+</font>
+
+<!-- RIGHT COLUMN END -->
+</td></tr></table>

@@ -1,0 +1,13 @@
+.com
+.net
+.org
+.info
+.biz
+.us
+.mobi
+.asia
+.pro
+.coop
+.aero
+.name
+.tel

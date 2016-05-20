@@ -1,0 +1,79 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search {
+	background-color: #ff6656;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.wa-search-form-rw-report {
+	margin-bottom:25px;
+}
+.form-control-feedback {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #ffffff;
+}
+.wa-radio-input-moreOption {
+	width: auto;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-box-paymentpolicy-rw-report {
+	margin-bottom:30px;
+}
+.wa-subtitle-paypal-rw-report {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-lbl-rw-report {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-section-title-secureorder-rw-report,.wa-section-title-orderreport-rw-report  {
+	margin-bottom:20px;
+}
+.wa-field-lbl-uname {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-box-secureorder-rw-report{
+	overflow:hidden;
+}
+.wa-shoppingcart-rw-report {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.wa-box-secureorder-rw-report{
+	margin-bottom: 30px;
+}
+.wa-btn-next-rw-report{
+	width: 80px;
+}
+.wa-box-orderreport-rw-report {
+	margin-bottom:0px;
+}
+@media (min-width: 976px) {
+	.wa-shoppingcart-rw-report,.wa-box-orderreport-rw-report {
+		margin-bottom:30px;
+	}
+	.wa-box-paymentpolicy-rw-report {
+		margin-bottom:15px;
+	}
+}

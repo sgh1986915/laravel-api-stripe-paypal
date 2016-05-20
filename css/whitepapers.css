@@ -1,0 +1,32 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-radio-input {
+	position: relative;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.form-control::-webkit-input-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+ .form-control::-moz-placeholder {
+		color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+.wa-btn-order {
+	margin-top: 10px;
+}

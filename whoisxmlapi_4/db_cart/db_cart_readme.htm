@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>DB_cart readme and manual</title>
+<style type="text/css">
+<!--
+body {
+	font-family:Arial, Helvetica, sans-serif;
+}
+ol li {
+	font-family: "Courier New", Courier, mono;
+	color:#666666;
+	font-size:12px;
+}
+.phpCode {
+	color:#33CC66;
+	font-weight:bold;
+	font-family: "Courier New", Courier, mono;
+	font-size:12px;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1>DB_cart class<span style="font-size:0.5em;font-weight:normal;"> Based on version 1.13 from June 14, 2006 </span></h1>
+<p>Author: <a href="http://www.finalwebsites.com/">Olaf Lederer</a></p>
+<p>This universal shopping cart script is powered by MySQL and works with external customer and product  data.</p>
+<h3>Description:</h3>
+<p>DB_cart Class is a MySQL shopping cart script and can be used with 3rd party product catalogues and membership systems. The whole MySQL database structure is neutral to existing systems. In the current version it's possible to handle the shopping cart (add, update and empty) and checkout process (set the shipment address and e-mail the order). For existing cart users (customers) the items of the  cart are still available while until his next visit and are available during checkout. The package includes all application files and example data to test all functions. Since version 1.10 its possible to use this class with product data where the stock value is variable. Notice the additional example files (they are explained at the end). Since version 1.13 the order messages are parsed via external files (de, nl or en language). </p>
+<h3>Features:</h3>
+<p>Standard class </p>
+<ul>
+  <li>Add, update and delete shopping cart</li>
+  <li>Cancel whole shopping cart </li>
+  <li>remember old cart (with the configuration about how long) </li>
+  <li>show whole cart</li>
+  <li>Show total (VAT) value of the cart </li>
+  <li>shipment address handling (insert/update)</li>
+  <li>checkout with mail confirmation </li>
+  <li>support for different currencies</li>
+  <li><b>New!</b> continue page (shows up after adding a product to the cart) </li>
+  <li><b>New!</b> all (e-mail) messages in NL, EN and DE language </li>
+</ul>
+<p>&quot;on Stock&quot; extenstion</p>
+<ul>
+  <li> check and update the amount of old order rows against the the current stock and and price</li>
+  <li>validation that not more products are bought then on stock while the customer adds a new amount to the cart</li>
+</ul>
+<p><b>Requirements:</b></p>
+<p>PHP 4, MySQL 3.23 or higher, access to a smtp server (windows only) and some knowledge in OOP</p>
+<h3>How to use?</h3>
+<p>First of all, the examples files have all information, you only need to:</p>
+<ul>
+  <li>Place all files into a directory structure like: <b>your_root_dir/classes/db_cart/</b></li>
+  <li>Install all <b>sql files</b> (use f.e. phpMyAdmin) </li>
+  <li>create a file called db.php (I place it into the folder classes which is one above the root), add this code with you database connection parameters:<br>
+    <span class="phpCode">&lt;?php<br>
+  define(&quot;DB_SERVER&quot;, &quot;localhost&quot;);<br>
+  define(&quot;DB_NAME&quot;, &quot;database&quot;);<br>
+  define (&quot;DB_USER&quot;, &quot;user&quot;);<br>
+  define (&quot;DB_PASSWORD&quot;, &quot;password&quot;);<br>
+  ?&gt;</span></li>
+  <li>configurate inside the file <b>db_config.php</b> the other variables </li>
+  <li>run this file: <b>http://your.domain/classes/db_cart/db_cart_example.php</b></li>
+  <li>be sure that the the e-mail address which is used inside the <b>db_cart_example.php</b> is valid (the value from the database is not a valid address)</li>
+</ul>
+<p>Please note that this class is supposed for mature php/MySQL enabled web hosts. It's possible that the script will not work f.e. on free web hosts!. </p>
+<p>You can use this class on two ways: </p>
+<ul>
+  <li><b>Without</b> a customer id, the cart is only active during the  current session.</li>
+  <li><b>With</b> a customer id, its possible to the user (customer) to continue an older shopping session if the old one is not expired</li>
+</ul>
+<h3>The example files:</h3>
+<p>In this manual are only the important files explained which are needed to use the class. If you like to try the other examples check the notes inside the files. </p>
+<p><b>db_config.php</b><br>
+  There are several constant variables defined, to use this class nothing but the database connection variables have to be changed. If you need to change them read the notes inside the file. The next values are important to modify: </p>
+<ul>
+  <li><span class="phpCode">define(&quot;CURRENCY&quot;, &quot;&pound;&quot;); // use &quot;&euro;&quot;, &quot;$&quot;, &quot;&pound;&quot; or &quot;&yen;&quot;</span></li>
+  <li><span class="phpCode">define(&quot;RECOVER_ORDER&quot;, false); // if this value is true an old order is available for old orders from customers, use &quot;false&quot; to remove the old order while the next access</span></li>
+  <li><span class="phpCode">define(&quot;VALID_UNTIL&quot;, 7 * 86400); // the value of seconds how long an old order is valid (default 7 days) and will be recoverd</span></li>
+  <li><span class="phpCode">define(&quot;SHOW_CONTINUE&quot;, true); // set this variable on true to show a continue page after the item is added to the cart (continue shopping or checkout)</span></li>
+</ul>
+<p><b>db_cart_example.php</b><br>
+This file get the product information from the example table &quot;db_cart_example_customer&quot; and stores this data in a record set. The data can be used for the presentation on the page. The following information is used later by the class:The product ID, the name and the price.</p>
+<p>The next code is optional and gets some customer data from the example table &quot;db_cart_example_customer&quot; and will store the customer number  and the e-mail address into a session. You can use other variables for these session variables too. </p>
+<p>One of the advantages of this class is the possibility to use product data which doesn't belong to this class. You can handle the  data for a product like this:</p>
+<ol>
+  <li><span class="phpCode">&lt;?php while ($prod_obj = mysql_fetch_object($prod_result)) { ?&gt;</span></li>
+  <li>&lt;form action=&quot;<span class="phpCode">&lt;?php echo CONTINUE_SCRIPT; ?&gt;</span>&quot; method=&quot;post&quot;&gt;</li>
+  <li>&lt;label for=&quot;prod_<span class="phpCode">&lt;?php echo $prod_obj-&gt;id; ?&gt;</span>&quot;&gt;</li>
+  <li>&lt;b&gt;<span class="phpCode">&lt;?php echo $prod_obj-&gt;name; ?&gt;</span>&lt;/b&gt;&lt;br&gt;</li>
+  <li><span class="phpCode">&lt;?php echo $prod_obj-&gt;description.&quot; - price: &quot;.$myCart-&gt;format_value($prod_obj-&gt;price); ?&gt;</span></li>
+  <li>&lt;/label&gt;</li>
+  <li>&lt;input type=&quot;text&quot; name=&quot;quantity&quot; size=&quot;5&quot; value=&quot;0&quot;&gt;</li>
+  <li>&lt;input type=&quot;hidden&quot; name=&quot;price&quot; value=&quot;<span class="phpCode">&lt;?php echo $prod_obj-&gt;price; ?&gt;</span>&quot;&gt;</li>
+  <li>&lt;input type=&quot;hidden&quot; name=&quot;art_no&quot; value=&quot;<span class="phpCode">&lt;?php echo $prod_obj-&gt;art_no; ?&gt;</span>&quot;&gt;</li>
+  <li>&lt;input type=&quot;hidden&quot; name=&quot;product&quot; value=&quot;<span class="phpCode">&lt;?php echo $prod_obj-&gt;name; ?&gt;</span>&quot;&gt;</li>
+  <li>&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add to cart&quot;&gt;&lt;br clear=&quot;left&quot;&gt;</li>
+  <li>&lt;/form&gt;</li>
+  <li><span class="phpCode">&lt;?php } ?&gt;</span></li>
+</ol>
+<p>This form is placed inside a loop (row 1 and 13) and will be submitted to the continue script (row 2, check the config file for the real name). Notice the presentation part on the rows 3 to 6. It's possible to put here more informations (images, further specs.) if in your datasource is this information available. The input element &quot;quantity&quot; is required and is the only input field in this form (row 7). The rows 8 to 10 holds other informations which are used by the class. At last there is a sbumit button at row 11.</p>
+<p>Further you need to create an new instance of the class: <span class="phpCode">$myCart = new db_cart($_SESSION['custom_num']);</span> The session variable is need to use it inside the current order. </p>
+<p>At the end of the script is a link  named &quot;checkout&quot;, if this link is used the following code is executed:</p>
+<ol>
+  <li><span class="phpCode">if (isset($_GET['action']) &amp;&amp; $_GET['action'] == &quot;checkout&quot;) {</span></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="phpCode">if ($myCart-&gt;get_number_of_records() &gt; 0) {</span></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="phpCode">header(&quot;Location: &quot;.CHECKOUT);</span></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="phpCode">} else {</span></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="phpCode">$myCart-&gt;error = &quot;Your cart is currently empty!&quot;;</span></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="phpCode">}</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>First there is a check if there are products in the cart, if yes the user is redirected to the checkout page (row 3) and if not a message is set (row 5). </p>
+<p>To show all messages use this code: <span class="phpCode">&lt;?php echo $myCart-&gt;error; ?&gt;</span></p>
+<p>The method <span class="phpCode">$myCart-&gt;show_ordered_rows()</span> is called for the table with ordered products at the end of the file. How to show order rows is described together with the checkout file next. </p>
+<p><b>db_cart_continue.php</b><br>
+This file is new since version 1.12 and is used to make the order proces more clear to the customer. After the customer has added a rpoduct to the cart this page will show up. On this page its possible to change the amount for the current product and there navigation links to the previous page or to the check out page. </p>
+<ol>
+  <li><span class="phpCode">$myCart = new db_cart($_SESSION['custom_num']);</span></li>
+  <li><span class="phpCode">$old_amount = $myCart-&gt;get_amount_from_row($_POST['art_no']);</span></li>
+  <li><span class="phpCode">if ($old_amount == 0) $old_amount = 1;</span></li>
+  <li></li>
+  <li><span class="phpCode">if (isset($_POST['add'])  || isset($_POST['product'])) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;if (isset($_POST['Submit'])) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$myCart-&gt;check_existing_row($_POST['art_no']);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$myCart-&gt;update_row($myCart-&gt;curr_product, $_POST['new_amount']);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;} else {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$myCart-&gt;handle_cart_row($_POST['art_no'], $_POST['product'], $old_amount, $_POST['price'], &quot;yes&quot;);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!SHOW_CONTINUE) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header(&quot;Location: &quot;.PROD_IDX.&quot;?get_msg=11&quot;); // the query string will create a message on the next page</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">} else {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;header(&quot;Location: &quot;.PROD_IDX);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;exit;</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>On row 2 there is a test to obtain the amount of an existing order row for the current product. Next if there is already an order row this one will <b>only</b>  updated with the new amount (row 7 and 8). Otherwise the default method handle_cart_row is used to create a new order row. If the constant SHOW_CONTINUE is set to false the user is redirected to the product page other wise he will see the continue page again.</p>
+<p><b>db_cart_checkout_example.php</b><br>
+  This example file is used for several tasks:</p>
+<ul>
+  <li>showing existing order rows </li>
+  <li>Cancel the whole order</li>
+  <li>Update (delete) of the quantity from an existing order row</li>
+  <li>Update / setting the shipment address </li>
+  <li>The checkout process</li>
+</ul>
+<p>To show dynamicly the orderrows in your own page its possible to store the data in array. This is done while calling this method: <span class="phpCode">$myCheckout-&gt;show_ordered_rows()</span> The data is showed with this code: </p>
+<ol>
+  <li>&lt;table&gt;</li>
+  <li>&nbsp;&nbsp;...// table header here</li>
+  <li><span class="phpCode">&nbsp;&nbsp;&lt;?php foreach ($myCheckout-&gt;order_array as $val) { ?&gt;</span></li>
+  <li>&nbsp;&nbsp;&lt;tr&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span class="phpCode">&lt;?php echo $val['product_id']; ?&gt;</span>&lt;/td&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span class="phpCode">&lt;?php echo $val['product_name']; ?&gt;</span>&lt;/td&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td align=&quot;right&quot;&gt;<span class="phpCode">&lt;?php echo $myCheckout-&gt;format_value($val['price']); ?&gt;</span>&lt;/td&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td align=&quot;right&quot;&gt;<span class="phpCode">&lt;?php echo $myCheckout-&gt;format_value($val['price'] * $val['quantity']); ?&gt;</span>&lt;/td&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form action=&quot;<span class="phpCode">&lt;?php echo $_SERVER['PHP_SELF']; ?&gt;</span>&quot; method=&quot;post&quot;&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;hidden&quot; name=&quot;row_id&quot; value=&quot;<span class="phpCode">&lt;?php echo $val['id']; ?&gt;</span>&quot;&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; name=&quot;quantity&quot; size=&quot;5&quot; value=&quot;<span class="phpCode">&lt;?php echo $val['quantity']; ?&gt;</span>&quot;&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;submit&quot; name=&quot;add&quot; value=&quot;Update&quot;&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;</li>
+  <li>&nbsp;&nbsp;&lt;/tr&gt;</li>
+  <li><span class="phpCode">&nbsp;&nbsp;&lt;?php } ?&gt;</span></li>
+  <li>&lt;/table&gt;</li>
+</ol>
+<p>The table row with data is placed in a foreach loop (row 3) and all order row values  are available in the <span class="phpCode">$myCheckout-&gt;order_array</span>. Notice the key names which are used to show the different values (row 5 to 12). Inside the last table cel is a small form with an input field and a submit button. This form is used to update each order row (row 12 and 13). If the new quantity value for a row is null, the row is automaticly deleted.</p>
+<p>If the update button is clicked the method <span class="phpCode">$myCheckout-&gt;update_row($_POST['row_id'], $_POST['quantity'])</span> is used to update the order row.</p>
+<p>If the user clicks on the &quot;Cancel all&quot; links the method <span class="phpCode">$myCheckout-&gt;cancel_order()</span> is called and all order rows, the order and the shipement data is removed. The user will be redirected to the product list.</p>
+<p>This script shows an example how to obtain customer/shipment data from a third party data source, here from the example table &quot;db_cart_example_customer&quot;.</p>
+
+<ol>
+  <li><span class="phpCode">if (!$myCheckout-&gt;check_return_shipment()) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$cust_conn = mysql_connect(DB_SERVER, DB_USER, DB_PASSWORD);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;mysql_select_db(DB_NAME, $cust_conn);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$cust_sql = sprintf(&quot;SELECT name, address, postal_code, place, country FROM db_cart_example_customer WHERE cust_no = %d&quot;, $cust_no);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$cust_result = mysql_query($cust_sql) or die(mysql_error());</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$cust_obj = mysql_fetch_object($cust_result);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_name = $cust_obj-&gt;name;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_name2 = $cust_obj-&gt;name2;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_address = $cust_obj-&gt;address;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_address2 = $cust_obj-&gt;address2;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_pc = $cust_obj-&gt;postal_code;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_city = $cust_obj-&gt;place;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;ship_country = $cust_obj-&gt;country;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;mysql_free_result($cust_result);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;insert_new_shipment();</span></li>
+  <li><span class="phpCode">} else {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;set_shipment_data();</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>Inside the script there is a check if a shipment record already exists. If not the the example table is used to get this data which will be stored in a record set (row 2 to 5). In the next rows the class variables are filled with the data from the recordset (row 7 to 11). At last the new data will be stored in the shipment table with the method <span class="phpCode">$myCheckout-&gt;insert_new_shipment()</span>. If  a shipment record already exists the method <span class="phpCode">$myCheckout-&gt;set_shipment_data()</span> is called.</p>
+<p>If you click on &quot;Order now&quot; or &quot;Continue shopping&quot; the shipmment data is automaticly saved while calling this code: </p>
+<ol>
+  <li><span class="phpCode">if (isset($_POST['submit'])) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;update_shipment($_POST['name'], $_POST[name2], $_POST[address], $_POST['address2'], $_POST['postal_code'], $_POST['place'], $_POST['country'], $_POST['message']);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;if ($_POST['submit'] == &quot;Order now!&quot;) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;check_out($cust_email);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;} else {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header(&quot;Location: &quot;.PROD_IDX);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>If the submit value is &quot;Order now!&quot; the order is processed by calling the method <span class="phpCode">$myCheckout-&gt;check_out($cust_email)</span> (use an additional form field for the $cust_email variable or use it from the external customer table) otherwise the user is redirected to the product list.</p>
+<p>There are two functions at the top of the script, this functions are used to create dynamicly formlelements. If you need more information about this functions check this url: <a href="http://www.finalwebsites.com/snippets.php">http://www.finalwebsites.com/snippets.php</a></p>
+<p>The values of the total amount and the VAT amount are showed by calling the methods <span class="phpCode">$myCheckout-&gt;format_value($myCheckout-&gt;show_total_value())</span> and <span class="phpCode">$myCheckout-&gt;format_value($myCheckout-&gt;create_total_VAT())</span>. Both values are formatted by the method &quot;format_value()&quot;.</p>
+<p><b>db_cart_confirm.php</b><br>
+This file is only used to show the data after the order is mailed to the user and the admin. Use this kind of pages to give more information to the user about what is happen. </p>
+<h3>Example files &quot;on stock&quot; extension</h3>
+<p>These example files are extended versions from the examples above. Only the new additional functions and code is explained here. If you need to know somthing about the other code check the parent examples above. First you have to use for all you application files this inluded file:</p>
+<p class="phpCode">require($_SERVER['DOCUMENT_ROOT'].&quot;/classes/db_cart/db_cart_4stock.php&quot;);</p>
+<p>Further you have to create objects like this:</p>
+<p class="phpCode">$myCart = new db_stock_cart($_SESSION['custom_num']); </p>
+<p><b>db_cart_stock_example.php</b> <br>
+  The code to obtain the example product data is a little bit different since we need the stock value: <span class="phpCode">$query_new = "SELECT art_no, amount AS on_stock, price, art_descr FROM db_cart_stock_article_example ORDER BY art_no";</span></p>
+<p>The next important code is used to  the new stock and price value to test them against existing open order rows for the current customer. </p>
+<ol>
+  <li><span class="phpCode">if (!$_SESSION['checked_cart']) { </span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$search_in = $myCart->get_order_num_string();</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$query_stock = sprintf("SELECT art_no, amount AS on_stock, price FROM db_cart_stock_article_example WHERE art_no IN (%s) ORDER BY art_no", $search_in);</span></li>
+  <li><span class="phpCode">if ($res_stock = mysql_query($query_stock)) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$i = 0;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;while ($stock = mysql_fetch_assoc($res_stock)) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$stock_array[$i]['new_stock'] = $stock['on_stock'];</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$stock_array[$i]['new_price'] = $stock['price'];</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$stock_array[$i]['prod_id'] = $stock['art_no'];</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i++;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCart->update_stock_values($stock_array);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;mysql_free_result($res_stock);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p> In the first row is a check against a session if the check was already done before. If not then the script will buid a string with the article numbers from the existing order rows (row 2). This string uis used to query the product example tabel. Inside the loop (row 6 to 11) the array $stock_array is filled with values from database, <b>don't change the key names of this array!</b>. On row 12 is the method update_stock_values called. This is used to update the existing order rows. Notice the additional code later in the html table will show the stock value from the result set <span class="phpCode">&lt;?php echo $row_new['on_stock']; ?&gt;</span></p>
+<p>db_cart_checkout_stock_example.php<br>
+  In this field is not so much changed because there is only a check to prevent orders with amount bigger then the stock value and the stock value is listed in the table.</p>
+<ol>
+  <li><span class="phpCode">if (isset($_POST['add']) &amp;&amp; $_POST['add'] == &quot;Update&quot;) { </span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;if ($myCheckout-&gt;check_against_stock($_POST['stock'], $_POST['quantity'])) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$myCheckout-&gt;update_row($_POST['row_id'], $_POST['quantity']);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>Notice the addional row no. 2, there is test for the current order amount and the stock value.</p>
+<p>Next some code to get the stock values from the example table:</p>
+<ol>
+  <li><span class="phpCode">$myCheckout-&gt;show_ordered_rows();</span></li>
+  <li><span class="phpCode">$search_in = $myCheckout-&gt;get_order_num_string();</span></li>
+  <li><span class="phpCode">$query_stock = sprintf(&quot;SELECT art_no, amount AS on_stock FROM db_cart_stock_article_example WHERE art_no IN (%s) ORDER BY art_no&quot;, $search_in);</span></li>
+  <li><span class="phpCode">$res_stock = mysql_query($query_stock);</span></li>
+  <li><span class="phpCode">while ($stock = mysql_fetch_assoc($res_stock)) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$stock_array[$stock['art_no']] = $stock['on_stock'];</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>There is again the function called to build the string with the article number to search the records from the product example table. Inside the loop is an array build with the article number as key and the stock value as value.</p>
+<p>This stock value is placed in order table like this: <span class="phpCode">$stock_array[$val['product_id']];</span></p>
+<p><b>db_cart_stock_confirm.php</b><br>
+  In this file is an additional function to update the stock values after the order is processed:</p>
+<ol>
+  <li><span class="phpCode">$myConfirm->set_shipment_data();</span></li>
+  <li><span class="phpCode">$sql_errors = 0;</span></li>
+  <li><span class="phpCode">foreach ($myConfirm-&gt;order_array as $val) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$update_stock = sprintf(&quot;UPDATE db_cart_stock_article_example SET amount = amount - %d, last_buy = NOW() WHERE art_no = '%s'&quot;, $val['quantity'], $val['product_id']);</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;if (!mysql_query($update_stock)) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;&nbsp;&nbsp;$sql_errors++;</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;}</span></li>
+  <li><span class="phpCode">}</span></li>
+  <li><span class="phpCode">if ($sql_errors == 0) {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$myConfirm-&gt;close_order();</span></li>
+  <li><span class="phpCode">} else {</span></li>
+  <li><span class="phpCode">&nbsp;&nbsp;$myConfirm-&gt;error = $myConfirm-&gt;messages(1);</span></li>
+  <li><span class="phpCode">}</span></li>
+</ol>
+<p>First get the shipment information for this order (row 1) then loop through the array with order rows to update the related product row with the new quantity of the product.</p>
+</body>
+</html>

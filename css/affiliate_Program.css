@@ -1,0 +1,26 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-subtitle-affiliateprogram{
+	font-family:Open Sans;
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:15px;
+}
+.wa-section-title-whoisAPI-affiliateprogram{
+	margin-bottom:20px;
+}
+.wa-box-monthlyplan-affiliateprogram {
+	height:auto;
+}
+.wa-section-title-affiliateprogram {
+	margin-bottom:10px;
+}
+@media (min-width: 976px) {
+	.wa-box-monthlyplan-affiliateprogram {
+		height:242px;
+	}
+}

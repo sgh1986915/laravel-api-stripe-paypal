@@ -1,0 +1,109 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-search{
+	background-color: #ff6656;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.form-control-feedback {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #ffffff;
+}
+.wa-radio-input {
+	position: relative;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-btn-orderNow, .wa-btn-orderNow:hover {
+	background-color: #474747;
+	color: #ffffff;
+	border-color: transparent;
+	font-family: Open Sans;
+	font-size: 13px;
+}
+.form-control::-webkit-input-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+ .form-control::-moz-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+.wa-box-APIprivacyPolicy-privacypolicy,.wa-box-contactingus-privacypolicy{
+	margin-bottom:30px;
+}
+.wa-content-text-useinfo-privacypolicy{
+	font-weight:bold;
+}
+.wa-box-protectinfo-privacypolicy{
+	height:auto;
+}
+.wa-box-infoprivacypolicy-privacypolicy{
+	height:auto;
+}
+.wa-box-childrenonline-privacypolicy{
+	height:auto;
+}
+.wa-box-yourconsent-privacypolicy{
+
+}
+.wa-box-infoprivacypolicy-privacypolicy,.wa-box-infoUse-privacypolicy,.wa-box-protectinfo-privacypolicy,.wa-box-dicloseinfo-privacypolicy,.wa-box-childrenonline-privacypolicy,.wa-box-californiaonline-privacypolicy,.wa-box-termsandconditions-privacypolicy,.wa-box-changeprivacy-privacypolicy{
+	margin-bottom:0px;
+}
+@media (min-width: 976px) {
+	.wa-box-infoprivacypolicy-privacypolicy,.wa-box-infoUse-privacypolicy,.wa-box-protectinfo-privacypolicy,.wa-box-dicloseinfo-privacypolicy,.wa-box-childrenonline-privacypolicy,.wa-box-californiaonline-privacypolicy,.wa-box-termsandconditions-privacypolicy,.wa-box-changeprivacy-privacypolicy{
+		margin-bottom:30px;
+	}
+	.wa-box-infoprivacypolicy-privacypolicy{
+		height:236px;
+	}
+	.wa-box-childrenonline-privacypolicy{
+		height:283px;
+}
+	.wa-box-protectinfo-privacypolicy{
+		height:346px;
+	}
+	.wa-box-usecookies-privacypolicy {
+		height:110px;
+	}
+	.wa-box-contactingus-privacypolicy{
+		margin-bottom: 15px;
+	}
+}
+@-moz-document url-prefix() {
+    .wa-box-infoprivacypolicy-privacypolicy {
+		height:240px;
+	}
+	.wa-box-protectinfo-privacypolicy {
+		height:352px;
+	}
+	.wa-box-childrenonline-privacypolicy {
+		height:288px;
+	}
+}
+

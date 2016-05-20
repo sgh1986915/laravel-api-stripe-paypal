@@ -1,0 +1,92 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-content-text-bulkwhois{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left:20px;
+	color: #4a4a4b;
+	word-wrap:break-word;
+}
+.wa-redlink-order{
+	color: #ff151c;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.wa-img-bulkwhois{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.wa-video-bilkwhois,.wa-img-bulkwhois {
+	width:auto;
+	height:auto;
+}
+.wa-boxlookupdomain-bilkwhois{
+	margin-bottom:30px;
+}
+.wa-tdfloat-bulkwhois{
+	border: 0px transparent!important;
+}
+.wa-listcontent-bulkwhois{
+	margin-top: 10px;
+}
+.wa-table-whoisapi{
+	margin-top:30px;
+}
+.wa-radio-bulkwhois{
+	position:relative!important;
+}
+.wa-title-bulkwhois ,.wa-box-lookupapp-bulkwhois,.wa-box-servie-bulkwhois{
+	margin-bottom:0px;
+}
+.flex-video {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+}
+.wa-table-fast-track {
+	max-width: 975px;
+}
+.wa-box-servie-bulkwhois {
+	padding:5px;
+}
+.radio-inline+.radio-inline, .checkbox-inline+.checkbox-inline {
+	margin-left:0px;
+}
+.wa-img-bulkwhois-2{
+	display: none;
+}
+td ,th{
+	word-break:break-all;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 976px) {
+	.wa-box-servie-bulkwhois,.wa-no-padding-xs {
+		padding:15px;
+	}
+	.wa-box-lookupapp-bulkwhois,.wa-box-servie-bulkwhois {
+		margin-bottom:30px;
+	}
+}
+@media (min-width: 768px) {
+	.wa-img-bulkwhois,.wa-video-bilkwhois{
+		width:578px;
+		height:360px;
+	}
+}
+@media (max-width: 768px) {
+	td ,th{
+		padding:8px 2px !important;
+		text-align:center;
+	}
+	.wa-input-radio-table {
+		margin:0 auto !important;
+		display:table;
+	}
+	.wa-lbl-regular,.wa-lbl-expdited {
+		text-align:center;
+	}
+}

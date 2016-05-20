@@ -1,0 +1,75 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-box-Secure-reverseIppurchase {
+	overflow:hidden;
+}
+.wa-textunderline{
+	text-decoration:underline;
+}
+.wa-listcontent-reverseIppurchase{
+	margin-top: 10px;
+}
+.wa-field-lbl-uname {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-content-text-reverseIppurchase{
+	margin-bottom:10px;
+}
+.wa-box-payPlan-reverseIppurchase {
+	height: auto;
+}
+.wa-subtitle-paypal-reverseIppurchase{
+	font-family:Open Sans;
+	font-weight:bold;
+}
+.wa-btn-bill,.wa-btn-bill:hover {
+	border: 0px;
+	background-color: transparent;
+	padding: 0px;
+	color: #ff6656;
+}
+.wa-btn-bill:hover {
+	text-decoration: underline;
+}
+.wa-table-reverseIppurchase {
+	max-width:975px;
+}
+.wa-box-Secure-reverseIppurchase,.wa-box-payPlan-reverseIppurchase,.wa-box-menbershipPlans-reverseIppurchase{
+		margin-bottom: 0px;
+}
+.wa-btn-reverseIppurchase{
+	width: 80px;
+}
+td ,th{
+	word-break:break-all;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 976px){
+	.wa-box-payPlan-reverseIppurchase {
+		height: 771px;
+	}
+	.wa-box-Secure-reverseIppurchase,.wa-box-payPlan-reverseIppurchase,.wa-box-menbershipPlans-reverseIppurchase{
+		margin-bottom: 30px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-payPlan-reverseIppurchase {
+			height:784px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	td ,th {
+		word-break: break-word;
+		padding: 8px 2px !important;
+		text-align: center;
+	}
+}

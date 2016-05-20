@@ -1,0 +1,131 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-lbl-uname {
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.wa-content-text-orderNow {
+	margin-bottom: 25px;
+	color: #333333;
+}
+.wa-radio-inline {
+	padding:0px;
+	position:relative;
+}
+.wa-field-lbl {
+	font-weight: 100 !important;
+	font-size: 15px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+.wa-box-payPlan-orderNow {
+	height:auto;
+}
+.wa-search-eg-box {
+	margin-top: 25px;
+}
+.wa-subtitle-paypal-orderNow{
+	font-family:Open Sans;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.wa-box-lService-orderNow {
+	height:auto;
+}
+.wa-box-historicTable-orderNow {
+	height:auto;
+}
+.wa-box-paymentpolicy-orderNow {
+	margin-bottom:30px;
+}
+.wa-img-paypal2-orderNow {
+	margin:0 auto;
+	display:inline-block;
+}
+.wa-btn-bill,.wa-btn-bill:hover {
+	border: 0px;
+	background-color: transparent;
+	padding: 0px;
+	color: #ff6656;
+}
+.wa-btn-bill:hover {
+	text-decoration:underline;
+}
+.wa-paymentpolicy {
+	margin-bottom:30px;
+}
+.wa-table-orderNow{
+	max-width:975px;
+}
+.radio-inline+.radio-inline, .checkbox-inline+.checkbox-inline {
+	margin-left: 0px;
+}
+.wa-box-paypalorder-orderNow,.wa-box-payPlan-orderNow,.wa-membershipplan-orderNow,.wa-box-lService-orderNow,.wa-bulklooupapp-orderNow,.wa-box-historicTable-orderNow,.wa-pricingAlexa-orderNow {
+	margin-bottom:0px;
+}
+.wa-btn-next-orderNow{
+	width: 80px;
+}
+.wa-th-desc {
+	width:100px;
+}
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+	border-bottom-width: 0px !important;
+}
+@media (min-width: 976px) {
+	.wa-box-payPlan-orderNow {
+		height:926px;
+	}
+	.wa-box-lService-orderNow {
+		height:841px;
+	}
+	.wa-pricingAlexa-orderNow{
+		height: 765px;
+	}
+	.wa-box-paypalorder-orderNow,.wa-box-payPlan-orderNow,.wa-membershipplan-orderNow,.wa-box-lService-orderNow,.wa-bulklooupapp-orderNow,.wa-box-historicTable-orderNow,.wa-pricingAlexa-orderNow,.wa-box-hcctld-orderNow {
+		margin-bottom:30px;
+	}
+	.wa-box-paymentpolicy-orderNow{
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 768px) {
+	td ,th{
+		padding:8px 2px !important;
+		text-align:center;
+		word-wrap: break-word;
+		word-break:break-word;
+	}
+	.wa-th-desc {
+		width:90px;
+	}
+}
+@-moz-document url-prefix() {
+	@media (min-width: 976px) {
+		.wa-box-lService-orderNow {
+			height:850px;
+		}
+		.wa-box-payPlan-orderNow  {
+			height:940px;
+		}
+		.wa-pricingAlexa-orderNow {
+			height:795px;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-search-eg-box{
+	margin-top:25px;
+}
+.wa-search{
+	background-color: #ff6656;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.wa-content-spacing{
+	line-height:22px;
+	word-spacing:5px;
+}
+.form-control-feedback {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #ffffff;
+}
+.wa-exapple {
+	font-family: Open Sans;
+	font-size: 12px;
+	color: #ffffff;
+}
+.wa-radio-input {
+	position: relative;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.wa-cursor {
+	cursor: pointer;
+}
+.wa-field-value-selection {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 14px;
+}
+.wa-field-input-selection, .wa-field-value-selection {
+	color: #ffffff;
+}
+.form-control::-webkit-input-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}
+ .form-control::-moz-placeholder {
+	color:#ffffff;
+	font-family:Open Sans;
+	font-style:italic;
+	font-size:14px;
+}

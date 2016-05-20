@@ -1,0 +1,30 @@
+label {
+	font-weight:normal;
+}
+.wa-box {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.form-control.wa-formcontent-registration {
+	font-family:Roboto;
+	font-size:16px;
+}
+.wa-title-reg {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-registration-form {
+	overflow:hidden;
+}
+.wa-img-captcha {
+	margin-top:10px;
+}
+.wa-btn-create-accnt{
+	margin-top: 25px;
+}
+.wa-col-create-btn {
+	padding-left:0px;
+}

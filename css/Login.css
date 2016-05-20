@@ -1,0 +1,34 @@
+.wa-box {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.wa-login-form {
+	width:auto;
+}
+label {
+	font-weight:normal;
+}
+.wa-login-form {
+	overflow:hidden;
+}
+.wa-registration-form {
+	margin:50px 0px;
+}
+.wa-title-reg {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wa-searchbox-radio {
+	background-color: #ff6656;
+}
+.wa-registration-form {
+	overflow:hidden;
+}
+.wa-img-captcha {
+	margin-top:10px;
+}
+@media (min-width: 498px) {
+	.wa-login-form {
+		width:450px;
+}
+}

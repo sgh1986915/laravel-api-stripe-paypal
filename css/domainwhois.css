@@ -1,0 +1,113 @@
+.wa-content-text-domainapi{
+	color: #4a4a4b;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.wa-margin{
+	margin-top:20px;
+}
+.wa-box-service-domainWhois{
+	margin-bottom:30px;
+}
+.wa-title-domainWhois {
+	margin-bottom:0px;
+}
+.wa-domain{
+	background-color: transparent;
+	border: 0px;
+	border-radius: 0px;
+	font-family: Open Sans;
+	font-weight: normal;
+}
+.wa-content-answers-domainWhois{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.wa-link-domainapi
+{
+	font-size: 15px;
+}
+.wa-img-domain{
+	margin-left: auto;
+    margin-right: auto;
+}
+.wa-box-top-domainapi {
+	height:auto;
+}
+.wa-box-domainapi{
+	height:auto;
+}
+.wa-xmlschema-domainapi{
+	margin-bottom:30px;
+}
+.wa-url-webservice-domainwhois,.wa-url-domainWhois,.wa-content-query-domainWhois,.wa-link-domainapi,.wa-content-text-domainapi {
+	word-break:break-word;
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	white-space: pre-wrap;       /* css-3 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	word-break: break-all;
+	white-space: normal
+}
+.wa-list-unstyled {
+	margin-top:10px;
+}
+.wa-url-domainWhois {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.wa-box-webserviceCall-domainWhois,.wa-box-query-domainWhois,.wa-box-support-domainWhois ,.wa-box-service-domainWhois{
+	height:auto;
+}
+.wa-box-webserviceCall-domainWhois,.wa-box-warning-domainWhois,.wa-box-query-domainWhois,.wa-box-makequery-domainWhois,.wa-box-http-domainWhois,.wa-box-http-domainWhois,.wa-box-support-domainWhois,.wa-box-domainName-domainWhois{
+	margin-bottom:0px;
+}
+.wa-box-service-domainWhois{
+	margin-bottom: 30px;
+}
+.wa-list-no {
+	float:left;
+}
+@media (min-width: 976px){
+	.wa-box-top-domainapi {
+		height:555px;
+	}
+	.wa-box-query-domainWhois {
+		height:173px;
+	}
+	.wa-box-support-domainWhois {
+		height:110px;
+	}
+	.wa-box-domainapi{
+		height:150px;
+	}
+	.wa-box-service-domainWhois
+	{
+		height:136px;
+	}
+	.wa-box-webserviceCall-domainWhois {
+		height:663px;
+	}
+	.wa-box-webserviceCall-domainWhois,.wa-box-warning-domainWhois,.wa-box-query-domainWhois,.wa-box-makequery-domainWhois,.wa-box-http-domainWhois,.wa-box-http-domainWhois,.wa-box-support-domainWhois,.wa-box-service-domainWhois {
+		margin-bottom:30px;
+	}
+	.wa-box-domainName-domainWhois,.wa-box-service-domainWhois{
+		margin-bottom: 15px;
+	}
+}
+@media all and (max-width: 976px) and (min-width: 765px) {
+	.wa-box-width-xs {
+		width:100%;
+	}
+}
+@-moz-document url-prefix() {
+	.wa-box-webserviceCall-domainWhois {
+		height: 675px;
+	}
+	.wa-box-support-domainWhois,.wa-box-http-domainWhois{
+		height:130px;
+	}
+	.wa-box-query-domainWhois{
+		height: 176px;
+	}
+}
